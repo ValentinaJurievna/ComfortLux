@@ -1,0 +1,1645 @@
+function close(id, id_button) {
+	state = document.getElementById(id).style.display;
+	if (state == '') {
+		document.getElementById(id).style.display = 'none';
+		document.getElementById(id_button).style.boxShadow = "-5px -5px 16px rgba(255, 216, 186, 0.5), 5px 5px 16px rgba(191, 160, 138, 0.5)";
+	}
+	
+}
+
+
+function openRollerBlinds() {
+	if (document.getElementById('roller-blinds').style.display == 'none') {
+		document.getElementById('roller-blinds').style.display = '';
+		document.getElementById('roller-blinds-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = '';
+		  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openVerticalBlinds() {
+	if (document.getElementById('vertical-blinds').style.display == 'none') {
+		document.getElementById('vertical-blinds').style.display = '';
+		document.getElementById('vertical-blinds-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openHorizontalBlinds() {
+	if (document.getElementById('horizontal-blinds').style.display == 'none') {
+		document.getElementById('horizontal-blinds').style.display = '';
+		document.getElementById('horizontal-blinds-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openRomanBlinds() {
+	if (document.getElementById('roman-blinds').style.display == 'none') {
+		document.getElementById('roman-blinds').style.display = '';
+		document.getElementById('roman-blinds-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openJapanesePanels() {
+	if (document.getElementById('japanese-panels').style.display == 'none') {
+		document.getElementById('japanese-panels').style.display = '';
+		document.getElementById('japanese-panels-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openPleated() {
+	if (document.getElementById('pleated').style.display == 'none') {
+		document.getElementById('pleated').style.display = '';
+		document.getElementById('pleated-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openBamboo() {
+	if (document.getElementById('bamboo').style.display == 'none') {
+		document.getElementById('bamboo').style.display = '';
+		document.getElementById('bamboo-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openCornices() {
+	if (document.getElementById('cornices').style.display == 'none') {
+		document.getElementById('cornices').style.display = '';
+		document.getElementById('cornices-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openMosquitoNets() {
+	if (document.getElementById('mosquito-nets').style.display == 'none') {
+		document.getElementById('mosquito-nets').style.display = '';
+		document.getElementById('mosquito-nets-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('curtain', 'curtain-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openCurtain() {
+	if (document.getElementById('curtain').style.display == 'none') {
+		document.getElementById('curtain').style.display = '';
+		document.getElementById('curtain-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('sectional-doors', 'sectional-doors-button');
+	}
+}
+
+function openSectionalDoors() {
+	if (document.getElementById('sectional-doors').style.display == 'none') {
+		document.getElementById('sectional-doors').style.display = '';
+		document.getElementById('sectional-doors-button').style.boxShadow = "inset -5px -5px 16px rgba(255, 216, 186, 0.5), inset 5px 5px 16px rgba(191, 160, 138, 0.5)";
+        document.getElementById('calculator').style.display = 'none';
+		  close('roller-blinds', 'roller-blinds-button');
+    	  close('vertical-blinds', 'vertical-blinds-button');
+    	  close('horizontal-blinds', 'horizontal-blinds-button');
+    	  close('roman-blinds', 'roman-blinds-button');
+    	  close('japanese-panels', 'japanese-panels-button');
+    	  close('pleated', 'pleated-button');
+    	  close('bamboo', 'bamboo-button');
+    	  close('cornices', 'cornices-button');
+    	  close('mosquito-nets', 'mosquito-nets-button');
+    	  close('curtain', 'curtain-button');
+	}
+}
+
+
+function replaceImg(id, img, name, value) {
+	var a = document.getElementById(id);
+	a.src = img;
+
+	document.getElementById(name).innerHTML = value;
+}
+
+
+function openPhoto(id, id_2) {
+	var modal = document.getElementById('myModal');
+	var click = document.getElementById(id_2);
+	var img = document.getElementById(id);
+	var modalImg = document.getElementById('img');
+
+	click.onclick = function() {
+		modal.style.display = 'block';
+        document.querySelector('section').classList.add('filter');
+        document.querySelector('header').classList.add('filter');
+        document.querySelector('footer').classList.add('filter');
+        document.querySelector('body').classList.add('remove-scroll');
+		modalImg.src = img.src;
+	}
+
+	var span = document.getElementsByClassName('close')[0];
+	span.onclick = function() {
+		modal.style.display = 'none';
+        document.querySelector('section').classList.remove('filter');
+        document.querySelector('header').classList.remove('filter');
+        document.querySelector('footer').classList.remove('filter');
+        document.querySelector('body').classList.remove('remove-scroll');
+	}
+
+	modal.onclick = function(e) {
+		event = e || window.e
+    		if (event.target == this) {
+        		modal.style.display = 'none';
+                document.querySelector('section').classList.remove('filter');
+                document.querySelector('header').classList.remove('filter');
+                document.querySelector('footer').classList.remove('filter');
+                document.querySelector('body').classList.remove('remove-scroll');
+			}
+	}
+	
+}
+
+
+function openModal(id) {
+	var modal = document.getElementById('modal-order');
+	var button = document.getElementById(id);
+
+	button.onclick = function() {
+		modal.style.display = 'block';
+        document.querySelector('section').classList.add('filter');
+        document.querySelector('header').classList.add('filter');
+        document.querySelector('footer').classList.add('filter');
+        document.getElementById('main-page').classList.add('filter');
+        document.querySelector('body').classList.add('remove-scroll');
+	}
+
+	var span = document.getElementsByClassName('close')[0];
+	span.onclick = function() {
+		modal.style.display = 'none';
+        document.querySelector('section').classList.remove('filter');
+        document.querySelector('header').classList.remove('filter');
+        document.querySelector('footer').classList.remove('filter');
+        document.getElementById('main-page').classList.remove('filter');
+        document.querySelector('body').classList.remove('remove-scroll');
+	}
+
+	modal.onclick = function(e) {
+		event = e || window.e
+    		if (event.target == this) {
+        		modal.style.display = 'none';
+                document.querySelector('section').classList.remove('filter');
+                document.querySelector('header').classList.remove('filter');
+                document.querySelector('footer').classList.remove('filter');
+                document.getElementById('main-page').classList.remove('filter');
+                document.querySelector('body').classList.remove('remove-scroll');
+			}
+	}
+}
+
+
+function openDropdown() {
+	if (document.getElementById('dropdown').style.display == 'none' ) {
+		document.getElementById('dropdown').style.display = '';
+	}
+
+	else {
+		document.getElementById('dropdown').style.display == 'none';
+	}
+}
+
+
+// Calculator
+
+function fun() {
+    var width = document.getElementById('width').value;
+    var height = document.getElementById('height').value;
+    var quantity = document.getElementById('quantity').value;
+    var finalValue = document.getElementById('final-value');
+
+    var yourWidth = document.getElementById('your-width');
+    var yourHeight = document.getElementById('your-height');
+    var yourQuantity = document.getElementById('your-quantity');
+    var yourAdditional = document.getElementById('your-additional');
+    var yourSystem = document.getElementById('your-system');
+    var yourFabricType = document.getElementById('your-fabric-type');
+    var yourFabricName = document.getElementById('your-fabric-name');
+    var yourFabricNumber = document.getElementById('your-fabric-number');
+
+    yourWidth.innerHTML = width;
+    yourHeight.innerHTML = height;
+    yourQuantity.innerHTML = quantity;
+
+
+    if (document.getElementById('mini').checked) {
+        yourSystem.innerHTML = 'Mini';
+    }
+
+    if (document.getElementById('uni').checked) {
+        yourSystem.innerHTML = 'Uni';
+    }
+
+    if (document.getElementById('mgs').checked) {
+        yourSystem.innerHTML = 'Mgs';
+    }
+
+
+    if (document.getElementById('White').checked) {
+        yourAdditional.innerHTML = 'Белая';
+    }
+
+    if (document.getElementById('Brown').checked) {
+        var Brown = Math.round(final+((parseInt(width)/100)*31));
+        finalValue.innerHTML = Brown;
+        yourAdditional.innerHTML = 'Коричневая';
+    }
+
+    if (document.getElementById('Tree').checked) {
+        var Tree = Math.round(final+((parseInt(width)/100)*103));
+        finalValue.innerHTML = Tree;
+        yourAdditional.innerHTML = 'Ламинация';
+    }
+
+    if (document.getElementById('standart').checked) {
+
+        yourFabricType.innerHTML = 'Стандарт';
+        var s = document.getElementById("names-of-standart").options.selectedIndex;
+        var select = document.getElementById("names-of-standart").options[s].value;
+
+        if (select == 'ab') {
+            var n = document.getElementById("number-of-ab").options.selectedIndex;
+            var number = document.getElementById("number-of-ab").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*141);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'AB';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'ar') {
+            var n = document.getElementById("number-of-ar").options.selectedIndex;
+            var number = document.getElementById("number-of-ar").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*141);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'AR';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'wz') {
+            var n = document.getElementById("number-of-wz").options.selectedIndex;
+            var number = document.getElementById("number-of-wz").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*141);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'WZ';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'di') {
+            var n = document.getElementById("number-of-di").options.selectedIndex;
+            var number = document.getElementById("number-of-di").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*141);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'DI';
+            yourFabricNumber.innerHTML = number;
+        }
+
+    }
+
+    if (document.getElementById('day-night').checked) {
+        yourFabricType.innerHTML = 'День-ночь';
+        var s = document.getElementById("names-of-day-night").options.selectedIndex;
+        var select = document.getElementById("names-of-day-night").options[s].value;
+
+        if (select == 'luxury') {
+            var n = document.getElementById("number-of-luxury").options.selectedIndex;
+            var number = document.getElementById("number-of-luxury").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*141);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'Luxury';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'juventus') {
+            var n = document.getElementById("number-of-juventus").options.selectedIndex;
+            var number = document.getElementById("number-of-juventus").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*121);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'Juventus';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'marbella') {
+            var n = document.getElementById("number-of-marbella").options.selectedIndex;
+            var number = document.getElementById("number-of-marbella").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*97 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*112);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*156);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'Marbella';
+            yourFabricNumber.innerHTML = number;
+        }
+
+    }
+
+    if (document.getElementById('blackout').checked) {
+        yourFabricType.innerHTML = 'Блэкаут';
+        var s = document.getElementById("names-of-blackout").options.selectedIndex;
+        var select = document.getElementById("names-of-blackout").options[s].value;
+
+        if (select == 'i') {
+            var n = document.getElementById("number-of-I(BO)").options.selectedIndex;
+            var number = document.getElementById("number-of-I(BO)").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*141);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'I (BO)';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'nox') {
+            var n = document.getElementById("number-of-NOX(BO)").options.selectedIndex;
+            var number = document.getElementById("number-of-NOX(BO)").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*92 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*105);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*121);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'NOX (BO)';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'pb') {
+            var n = document.getElementById("number-of-PB(BO)").options.selectedIndex;
+            var number = document.getElementById("number-of-PB(BO)").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*97 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*112);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*156);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'PB(BO)';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'sf') {
+            var n = document.getElementById("number-of-SF(BO)").options.selectedIndex;
+            var number = document.getElementById("number-of-SF(BO)").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*97 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*112);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*156);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'SF(BO)';
+            yourFabricNumber.innerHTML = number;
+        }
+
+        if (select == 'str') {
+            var n = document.getElementById("number-of-STR(BO)").options.selectedIndex;
+            var number = document.getElementById("number-of-STR(BO)").options[n].text;
+            if (document.getElementById('mini').checked) {
+                var final = Math.round( (parseInt(width)/100)*(parseInt(height)/100)*quantity*97 );
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('uni').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*112);
+                finalValue.innerHTML = final;
+            }
+
+            if (document.getElementById('mgs').checked) {
+                var final = Math.round((parseInt(width)/100)*(parseInt(height)/100)*quantity*156);
+                finalValue.innerHTML = final;
+            }
+
+            yourFabricName.innerHTML = 'STR(BO)';
+            yourFabricNumber.innerHTML = number;
+        }
+    }
+
+   
+    
+}
+
+
+
+function openStandart() {
+    if (document.getElementById('standart').checked) {
+        document.getElementById('names-of-standart').style.display = '';
+        document.getElementById('number-of-ab').style.display = '';
+        document.getElementById('number-of-juventus').style.display = 'none';
+        document.getElementById('number-of-I(BO)').style.display = 'none';
+        document.getElementById('number-of-NOX(BO)').style.display = 'none';
+        document.getElementById('number-of-PB(BO)').style.display = 'none';
+        document.getElementById('number-of-SF(BO)').style.display = 'none';
+        document.getElementById('number-of-STR(BO)').style.display = 'none';
+        document.getElementById('number-of-luxury').style.display = 'none';
+        document.getElementById('number-of-marbella').style.display = 'none';
+        document.getElementById('names-of-day-night').style.display = 'none';
+        document.getElementById('names-of-blackout').style.display = 'none';
+        document.getElementById('photo').src = "../img/photos/Рольшторы/AB/401.jpg";
+    }  
+}
+
+function openDayNight() {
+    if (document.getElementById('day-night').checked) {
+        document.getElementById('names-of-day-night').style.display = '';
+        document.getElementById('number-of-luxury').style.display = '';
+        document.getElementById('number-of-ab').style.display = 'none';
+        document.getElementById('number-of-ar').style.display = 'none';
+        document.getElementById('number-of-wz').style.display = 'none';
+        document.getElementById('number-of-di').style.display = 'none';
+        document.getElementById('number-of-I(BO)').style.display = 'none';
+        document.getElementById('number-of-NOX(BO)').style.display = 'none';
+        document.getElementById('number-of-PB(BO)').style.display = 'none';
+        document.getElementById('number-of-SF(BO)').style.display = 'none';
+        document.getElementById('number-of-STR(BO)').style.display = 'none';
+        document.getElementById('names-of-standart').style.display = 'none';
+        document.getElementById('names-of-blackout').style.display = 'none';
+        document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/11.jpg";
+    }  
+}
+
+function openBlackout() {
+    if (document.getElementById('blackout').checked) {
+        document.getElementById('names-of-blackout').style.display = '';
+        document.getElementById('number-of-I(BO)').style.display = '';
+        document.getElementById('number-of-ab').style.display = 'none';
+        document.getElementById('number-of-ar').style.display = 'none';
+        document.getElementById('number-of-wz').style.display = 'none';
+        document.getElementById('number-of-di').style.display = 'none';
+        document.getElementById('number-of-luxury').style.display = 'none';
+        document.getElementById('number-of-juventus').style.display = 'none';
+        document.getElementById('number-of-marbella').style.display = 'none';
+        document.getElementById('names-of-standart').style.display = 'none';
+        document.getElementById('names-of-day-night').style.display = 'none';
+        document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/2.jpg";
+    }
+}
+
+
+function standartNames() {
+    var s = document.getElementById("names-of-standart").options.selectedIndex;
+    var select = document.getElementById("names-of-standart").options[s].value;
+
+    if (document.getElementById('mini').checked) {
+        if (select == 'ab') {
+            document.getElementById('number-of-ab').style.display = '';
+            document.getElementById('number-of-ar').style.display = 'none';
+            document.getElementById('number-of-wz').style.display = 'none';
+            document.getElementById('number-of-di').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/401.png";
+        }
+
+        if (select == 'ar') {
+            document.getElementById('number-of-ar').style.display = '';
+            document.getElementById('number-of-ab').style.display = 'none';
+            document.getElementById('number-of-wz').style.display = 'none';
+            document.getElementById('number-of-di').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AR/1839.png";
+        }
+
+        if (select == 'wz') {
+            document.getElementById('number-of-wz').style.display = '';
+            document.getElementById('number-of-ab').style.display = 'none';
+            document.getElementById('number-of-ar').style.display = 'none';
+            document.getElementById('number-of-di').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/03.png";
+        }
+
+        if (select == 'di') {
+            document.getElementById('number-of-di').style.display = '';
+            document.getElementById('number-of-ab').style.display = 'none';
+            document.getElementById('number-of-wz').style.display = 'none';
+            document.getElementById('number-of-ar').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/DI/7466.png";
+        }
+    }
+
+    if (document.getElementById('uni').checked) {
+
+        if (select == 'ab') {
+            document.getElementById('number-of-ab').style.display = '';
+            document.getElementById('number-of-ar').style.display = 'none';
+            document.getElementById('number-of-wz').style.display = 'none';
+            document.getElementById('number-of-di').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/401.jpg";
+        }
+
+        if (select == 'ar') {
+            document.getElementById('number-of-ar').style.display = '';
+            document.getElementById('number-of-ab').style.display = 'none';
+            document.getElementById('number-of-wz').style.display = 'none';
+            document.getElementById('number-of-di').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AR/1839.jpg";
+        }
+
+        if (select == 'wz') {
+            document.getElementById('number-of-wz').style.display = '';
+            document.getElementById('number-of-ab').style.display = 'none';
+            document.getElementById('number-of-ar').style.display = 'none';
+            document.getElementById('number-of-di').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/03.jpg";
+        }
+
+        if (select == 'di') {
+            document.getElementById('number-of-di').style.display = '';
+            document.getElementById('number-of-ab').style.display = 'none';
+            document.getElementById('number-of-wz').style.display = 'none';
+            document.getElementById('number-of-ar').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/DI/7466.jpg";
+        }
+    }
+
+    
+}
+
+
+function dayNightNames() {
+    var s = document.getElementById("names-of-day-night").options.selectedIndex;
+    var select = document.getElementById("names-of-day-night").options[s].value;
+
+    if(document.getElementById('mini').checked) {
+        if (select == 'juventus') {
+            document.getElementById('number-of-juventus').style.display = '';
+            document.getElementById('number-of-luxury').style.display = 'none';
+            document.getElementById('number-of-marbella').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Juventus/02.png";
+        }
+
+        if (select == 'luxury') {
+            document.getElementById('number-of-luxury').style.display = '';
+            document.getElementById('number-of-juventus').style.display = 'none';
+            document.getElementById('number-of-marbella').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Luxury/11.png";
+        }
+
+        if (select == 'marbella') {
+            document.getElementById('number-of-marbella').style.display = '';
+            document.getElementById('number-of-juventus').style.display = 'none';
+            document.getElementById('number-of-luxury').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/601.png";
+        }
+    }
+
+    if(document.getElementById('uni').checked) {
+        if (select == 'juventus') {
+            document.getElementById('number-of-juventus').style.display = '';
+            document.getElementById('number-of-luxury').style.display = 'none';
+            document.getElementById('number-of-marbella').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg";
+        }
+
+        if (select == 'luxury') {
+            document.getElementById('number-of-luxury').style.display = '';
+            document.getElementById('number-of-juventus').style.display = 'none';
+            document.getElementById('number-of-marbella').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/11.jpg";
+        }
+
+        if (select == 'marbella') {
+            document.getElementById('number-of-marbella').style.display = '';
+            document.getElementById('number-of-juventus').style.display = 'none';
+            document.getElementById('number-of-luxury').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/601.jpg";
+        }
+    }
+
+   
+    
+}
+
+
+function blackoutNames() {
+    var s = document.getElementById("names-of-blackout").options.selectedIndex;
+    var select = document.getElementById("names-of-blackout").options[s].text;
+
+    if (document.getElementById('mini').checked) {
+        if (select == 'I (BO)') {
+            document.getElementById('number-of-I(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/2.png";
+            
+        }
+
+        if (select == 'NOX (BO)') {
+            document.getElementById('number-of-NOX(BO)').style.display = '';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/NOX (BO)/3.png";
+        }
+
+        if (select == 'PB (BO)') {
+            document.getElementById('number-of-PB(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/PB (BO)/01.png";
+        }
+
+        if (select == 'SF (BO)') {
+            document.getElementById('number-of-SF(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/SF (BO)/01.png";
+        }
+
+        if (select == 'STR (BO)') {
+            document.getElementById('number-of-STR(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/STR (BO)/1.png";
+        }
+    }
+
+    if (document.getElementById('uni').checked) {
+        if (select == 'I (BO)') {
+            document.getElementById('number-of-I(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/2.jpg";
+            
+        }
+
+        if (select == 'NOX (BO)') {
+            document.getElementById('number-of-NOX(BO)').style.display = '';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/NOX (BO)/3.jpg";
+        }
+
+        if (select == 'PB (BO)') {
+            document.getElementById('number-of-PB(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/PB (BO)/01.jpg";
+        }
+
+        if (select == 'SF (BO)') {
+            document.getElementById('number-of-SF(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('number-of-STR(BO)').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/SF (BO)/01.jpg";
+        }
+
+        if (select == 'STR (BO)') {
+            document.getElementById('number-of-STR(BO)').style.display = '';
+            document.getElementById('number-of-NOX(BO)').style.display = 'none';
+            document.getElementById('number-of-PB(BO)').style.display = 'none';
+            document.getElementById('number-of-SF(BO)').style.display = 'none';
+            document.getElementById('number-of-I(BO)').style.display = 'none';
+            document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/STR (BO)/1.jpg";
+        }
+    }   
+
+}
+
+function AB() {
+    var s = document.getElementById("number-of-ab").options.selectedIndex;
+    var select = document.getElementById("number-of-ab").options[s].value;
+
+    if (select == 401) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/401.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/401.jpg";
+        }     
+    }
+
+    if (select == 403) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/403.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/403.jpg";
+        } 
+    }
+
+    if (select == 404) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/404.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/404.jpg";
+        }
+    }
+
+    if (select == 405) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/405.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/405.jpg";
+        }
+    }
+
+    if (select == 406) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/406.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/406.jpg";
+        }
+    }
+
+    if (select == 407) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AB/407.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AB/407.jpg";
+        }
+    }
+}
+
+function AR() {
+    var s = document.getElementById("number-of-ar").options.selectedIndex;
+    var select = document.getElementById("number-of-ar").options[s].value;
+
+    if (select == 1839) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AR/1839.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AR/1839.jpg";
+        }
+    }
+
+    if (select == 1842) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AR/1842.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AR/1842.jpg";
+        }
+    }
+
+    if (select == 2236) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AR/2236.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AR/2236.jpg";
+        }
+    }
+
+    if (select == 2282) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/AR/2282.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/AR/2282.jpg";
+        }
+    }
+}
+
+function WZ() {
+    var s = document.getElementById("number-of-wz").options.selectedIndex;
+    var select = document.getElementById("number-of-wz").options[s].value;
+
+    if (select == 'wz03') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/03.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/03.jpg";
+        }
+    }
+
+    if (select == 'wz04') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/04.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/04.jpg";
+        }
+    }
+
+    if (select == 'wz11') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/11.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/11.jpg";
+        }
+    }
+
+    if (select == 'wz13') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/13.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/13.jpg";
+        }
+    }
+
+    if (select == 'wz14') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/14.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/14.jpg";
+        }
+    }
+
+    if (select == 'wz16') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/16.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/16.jpg";
+        }
+    }
+
+    if (select == 'wz17') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/17.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/17.jpg";
+        }
+    }
+
+    if (select == 'wz18') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/18.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/18.jpg";
+        }
+    }
+
+    if (select == 'wz19') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/WZ/19.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/WZ/19.jpg";
+        }
+    }
+}
+
+function DI() {
+    var s = document.getElementById("number-of-di").options.selectedIndex;
+    var select = document.getElementById("number-of-di").options[s].value;
+
+    if (select == 7466) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/DI/7466.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/DI/7466.jpg";
+        }
+    }
+
+    if (select == 7467) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/DI/7467.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/DI/7467.jpg";
+        }
+    }
+}
+
+
+function luxury() {
+    var s = document.getElementById("number-of-luxury").options.selectedIndex;
+    var select = document.getElementById("number-of-luxury").options[s].value;
+
+    if (select == 11) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Luxury/11.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/11.jpg";
+        }
+    }
+
+    if (select == 12) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Luxury/12.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/12.jpg";
+        }
+    }
+
+    if (select == 14) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Luxury/14.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/14.jpg";
+        }
+    }
+
+    if (select == 16) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Luxury/16.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/16.jpg";
+        }
+    }
+
+    if (select == 18) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Luxury/18.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Luxury/18.jpg";
+        }
+    }
+
+
+}
+
+
+function juventus() {
+    var j = document.getElementById("number-of-juventus").options.selectedIndex;
+    var juventus = document.getElementById("number-of-juventus").options[j].value;
+
+    if (juventus == 02) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Juventus/02.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg";
+        }
+    }
+
+    if (juventus == 03) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Juventus/03.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Juventus/03.jpg";
+        }
+    } 
+
+    if (juventus == 07) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Juventus/07.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Juventus/07.jpg";
+        }
+    }   
+
+    if (juventus == 10) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Juventus/10.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Juventus/10.jpg";
+        }
+    }
+
+    if (juventus == 'j11') {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Juventus/11.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Juventus/11.jpg";
+        }
+    }
+
+}
+
+function marbella() {
+    var s = document.getElementById("number-of-marbella").options.selectedIndex;
+    var select = document.getElementById("number-of-marbella").options[s].value;
+
+    if (select == 601) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/601.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/601.jpg";
+        }
+    }
+
+    if (select == 602) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/602.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/602.jpg";
+        }
+    } 
+
+    if (select == 603) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/603.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/603.jpg";
+        }
+    }   
+
+    if (select == 604) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/604.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/604.jpg";
+        }
+    }
+
+    if (select == 605) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/605.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/605.jpg";
+        }
+    }
+
+    if (select == 606) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/606.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/606.jpg";
+        }
+    }
+
+    if (select == 607) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/607.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/607.jpg";
+        }
+    }
+
+    if (select == 608) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/608.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/608.jpg";
+        }
+    }
+
+    if (select == 609) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/609.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/609.jpg";
+        }
+    }
+
+    if (select == 610) {
+        if (document.getElementById('mini').checked) {
+            document.getElementById('photoMini').src = "../img/photos/Калькулятор/Marbella/610.png";
+        }
+        if (document.getElementById('uni').checked) {
+            document.getElementById('photo').src = "../img/photos/Рольшторы/День-Ночь/Marbella/610.jpg";
+        }
+    }
+
+}
+
+
+function I() {
+        var s = document.getElementById("number-of-I(BO)").options.selectedIndex;
+        var select = document.getElementById("number-of-I(BO)").options[s].value;
+
+        if (select == 'i2') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/2.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/2.jpg";
+            }
+        }
+
+        if (select == 'i3') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/3.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/3.jpg";
+            }
+        }
+
+        if (select == 'i4') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/4.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/4.jpg";
+            }
+        }
+
+        if (select == 'i5') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/5.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/5.jpg";
+            }
+        }
+
+        if (select == 'i6') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/6.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/6.jpg";
+            }
+        }
+
+        if (select == 'i7') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/7.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/7.jpg";
+            }
+        }
+
+        if (select == 'i8') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/8.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/8.jpg";
+            }
+        }
+
+        if (select == 'i9') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/9.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/9.jpg";
+            }
+        }
+
+        if (select == 'i10') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/10.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/10.jpg";
+            }
+        }
+
+        if (select == '0551') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/0551.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/0551.jpg";
+            }
+        }
+
+        if (select == '0576') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/0576.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/0576.jpg";
+            }
+        }
+
+        if (select == '0582') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/0582.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/0582.jpg";
+            }
+        }
+
+        if (select == '0591') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/I (BO)/0591.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/I (BO)/0591.jpg";
+            }
+        }
+}
+
+function NOX() {
+        var s = document.getElementById("number-of-NOX(BO)").options.selectedIndex;
+        var select = document.getElementById("number-of-NOX(BO)").options[s].value;
+
+        if (select == 'nox3') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/NOX (BO)/3.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/NOX (BO)/3.jpg";
+            }
+        }
+
+        if (select == 'nox4') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/NOX (BO)/4.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/NOX (BO)/4.jpg";
+            }
+        }
+
+        if (select == 'nox5') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/NOX (BO)/5.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/NOX (BO)/5.jpg";
+            }
+        }
+}
+
+function PB() {
+        var s = document.getElementById("number-of-PB(BO)").options.selectedIndex;
+        var select = document.getElementById("number-of-PB(BO)").options[s].value;
+
+        if (select == 'pb01') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/PB (BO)/01.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/PB (BO)/01.jpg";
+            }
+        }
+
+        if (select == 'pb02') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/PB (BO)/02.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/PB (BO)/02.jpg";
+            }
+        }
+}
+
+function SF() {
+        var s = document.getElementById("number-of-SF(BO)").options.selectedIndex;
+        var select = document.getElementById("number-of-SF(BO)").options[s].value;
+
+        if (select == 'sf01') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/SF (BO)/01.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/SF (BO)/01.jpg";
+            }
+        }
+
+        if (select == 'sf02') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/SF (BO)/02.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/SF (BO)/02.jpg";
+            }
+        }
+
+        if (select == 'sf03') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/SF (BO)/03.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/SF (BO)/03.jpg";
+            }
+        }
+
+        if (select == 'sf04') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/SF (BO)/04.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/SF (BO)/04.jpg";
+            }
+        }
+}
+
+function STR() {
+        var s = document.getElementById("number-of-STR(BO)").options.selectedIndex;
+        var select = document.getElementById("number-of-STR(BO)").options[s].value;
+
+        if (select == 'str1') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/STR (BO)/1.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/STR (BO)/1.jpg";
+            }
+        }
+
+        if (select == 'str2') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/STR (BO)/2.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/STR (BO)/2.jpg";
+            }
+        }
+
+        if (select == 'str3') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/STR (BO)/3.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/STR (BO)/3.jpg";
+            }
+        }
+
+        if (select == 'str4') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/STR (BO)/4.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/STR (BO)/4.jpg";
+            }
+        }
+
+        if (select == 'str5') {
+            if (document.getElementById('mini').checked) {
+                document.getElementById('photoMini').src = "../img/photos/Калькулятор/STR (BO)/5.png";
+            }
+            if (document.getElementById('uni').checked) {
+                document.getElementById('photo').src = "../img/photos/Рольшторы/Блэкаут/STR (BO)/5.jpg";
+            }
+        }
+}
+
+
+
+
+function openSystem() {
+    if (document.getElementById('mini').checked) {
+        document.getElementById('photo-mini').style.display = '';
+        document.getElementById('photo-uni').style.display = 'none';
+    }
+    
+    if (document.getElementById('uni').checked) {
+        document.getElementById('photo-uni').style.display = '';
+        document.getElementById('photo-mini').style.display = 'none';
+    }
+
+}
+
+
+function openAdditional() {
+    if (document.getElementById('White').checked) {
+        document.getElementById('color').src = "../img/photos/Калькулятор/белый.png";
+    }
+
+    if (document.getElementById('Brown').checked) {
+        document.getElementById('color').src = "../img/photos/Калькулятор/коричневая.png";
+    }
+
+    if (document.getElementById('Tree').checked) {
+        document.getElementById('color').src = "../img/photos/Калькулятор/ламинация.png";
+    }
+
+}
+

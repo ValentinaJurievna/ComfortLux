@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/png" href="../img/logo/logo_icon.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="../js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<title>Каталог</title>
+</head>
+<body>
+
+	<div class="preloader">
+    	<div class="preloader__image"></div>
+ 	</div>
+
+	<header>
+		<nav class="navbar navbar-expand-lg" style="background-color: black;">
+			<div class="container">
+					<a href="#" class="navbar-brand">
+						<img src="../img/logo/Logo.png" alt="" width="252" height="78">
+					</a>
+					
+					<ul class="navbar-nav flex-row d-flex col-lg-3">
+						<li class="nav-item">
+							<a href="../index.html" class="nav-link">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a href="other pages/catalog.html" class="nav-link ml-lg-4 ml-md-4 ml-sm-3 active">Каталог</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link ml-lg-4 ml-md-4 ml-sm-3">Наши работы</a>
+						</li>
+					</ul>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" id="cl">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav nav-flex-icons align-items-center ml-auto">
+							<li class="nav-item mr-lg-3">
+								<a href="#" class="nav-link disabled"><img src="../img/icons/pin.png" alt="" width="25" height="25">&ensp;Минск, Беларусь</a>
+							</li>
+							<li class="nav-item d-flex justify-content-center align-items-center mr-lg-3">
+								<a href="#" class="nav-link disabled p-1"><img src="../img/icons/call.png" alt="" width="25" height="25"></a>
+								<a href="#" class="nav-link disabled">
+									+375 (29) 771-28-99<br>
+									+375 (29) 331-28-99
+								</a>
+							</li>
+							<button class="button-standart ml-lg-auto">Заказать звонок</button>
+						</ul>
+					</div>
+				</div>
+		</nav>
+	</header>
+
+
+	<section class="menu">
+		<div class="container container-large">
+			<div class="d-flex flex-row pt-5">
+				<a href="#" class="menu__item active ml-0 p-3 d-flex align-items-center" id="roller-blinds-button" onclick="openRollerBlinds()">Рольшторы</a>
+				<a href="#" class="menu__item p-3 d-flex align-items-center" id="vertical-blinds-button" onclick="openVerticalBlinds()">Вертикальные жалюзи</a>
+				<a href="#" class="menu__item p-3 d-flex align-items-center" id="horizontal-blinds-button" onclick="openHorizontalBlinds()">Горизонтальные жалюзи</a>
+				<a href="#" class="menu__item p-3 d-flex align-items-center" id="roman-blinds-button" onclick="openRomanBlinds()">Римские шторы</a>
+				<a href="#" class="menu__item p-3 d-flex align-items-center" id="japanese-panels-button" onclick="openJapanesePanels()">Японские панели</a>
+				<a href="#" class="menu__item p-3 d-flex align-items-center" id="pleated-button" onclick="openPleated()">Плиссе</a>
+                <a href="#" class="menu__item p-3 d-flex align-items-center" id="bamboo-button" onclick="openBamboo()">Бамбук</a>
+                <a href="#" class="menu__item ml-auto p-3 d-flex align-items-center" id="cornices-button" onclick="openCornices()">Карнизы</a>
+			</div>
+			<div class="d-flex flex-row pb-5">
+				<a href="#" class="menu__item mt-4 ml-0 p-3 d-flex align-items-center" id="mosquito-nets-button" onclick="openMosquitoNets()">Москитные сетки</a>
+				<a href="#" class="menu__item mt-4 p-3 d-flex align-items-center" id="curtain-button" onclick="openCurtain()">Шторы</a>
+				<a href="#" class="menu__item mt-4 p-3 d-flex align-items-center" id="sectional-doors-button" onclick="openSectionalDoors()">Ворота секционные</a>
+			</div>
+		</div>
+
+		<div class="container container-ipad">
+			<div class="d-flex flex-row pt-4">
+				<a href="#" class="menu__item active ml-0 p-2 d-flex align-items-center" id="roller-blinds-button" onclick="openRollerBlinds()">Рольшторы</a>
+				<a href="#" class="menu__item p-2 d-flex align-items-center" id="vertical-blinds-button" onclick="openVerticalBlinds()">Вертикальные жалюзи</a>
+				<a href="#" class="menu__item p-2 d-flex align-items-center" id="horizontal-blinds-button" onclick="openHorizontalBlinds()">Горизонтальные жалюзи</a>
+				<a href="#" class="menu__item p-2 d-flex align-items-center" id="roman-blinds-button" onclick="openRomanBlinds()">Римские шторы</a>
+				<a href="#" class="menu__item p-2 d-flex align-items-center" id="japanese-panels-button" onclick="openJapanesePanels()">Японские панели</a>
+				<a href="#" class="menu__item ml-auto p-2 d-flex align-items-center" id="pleated-button" onclick="openPleated()">Плиссе</a>
+			</div>
+			<div class="d-flex flex-row pb-4">
+                <a href="#" class="menu__item mt-3 ml-0 p-2 d-flex align-items-center" id="bamboo-button" onclick="openBamboo()">Бамбук</a>
+                <a href="#" class="menu__item mt-3 p-2 d-flex align-items-center" id="cornices-button" onclick="openCornices()">Карнизы</a>
+				<a href="#" class="menu__item mt-3 p-2 d-flex align-items-center" id="mosquito-nets-button" onclick="openMosquitoNets()">Москитные сетки</a>
+				<a href="#" class="menu__item mt-3 p-2 d-flex align-items-center" id="curtain-button" onclick="openCurtain()">Шторы</a>
+				<a href="#" class="menu__item mt-3 p-2 d-flex align-items-center" id="sectional-doors-button" onclick="openSectionalDoors()">Ворота секционные</a>
+			</div>
+		</div>
+
+		<div class="container container-phone">
+			<div class="d-flex flex-row pt-3">
+				<a href="#" class="menu__item active ml-0 p-1 d-flex align-items-center" id="roller-blinds-button" onclick="openRollerBlinds()">Рольшторы</a>
+				<a href="#" class="menu__item p-1 d-flex align-items-center" id="vertical-blinds-button" onclick="openVerticalBlinds()">Вертикальные жалюзи</a>
+				<a href="#" class="menu__item p-1 d-flex align-items-center" id="horizontal-blinds-button" onclick="openHorizontalBlinds()">Горизонтальные жалюзи</a>
+				<a href="#" class="menu__item p-1 d-flex align-items-center" id="roman-blinds-button" onclick="openRomanBlinds()">Римские шторы</a>
+				<a href="#" class="menu__item p-1 ml-auto d-flex align-items-center" id="japanese-panels-button" onclick="openJapanesePanels()">Японские панели</a>
+				
+			</div>
+			<div class="d-flex flex-row pb-3">
+				<a href="#" class="menu__item mt-2 ml-0 p-1 d-flex align-items-center" id="pleated-button" onclick="openPleated()">Плиссе</a>
+                <a href="#" class="menu__item mt-2 p-1 d-flex align-items-center" id="bamboo-button" onclick="openBamboo()">Бамбук</a>
+                <a href="#" class="menu__item mt-2 p-1 d-flex align-items-center" id="cornices-button" onclick="openCornices()">Карнизы</a>
+				<a href="#" class="menu__item mt-2 p-1 d-flex align-items-center" id="mosquito-nets-button" onclick="openMosquitoNets()">Москитные сетки</a>
+				<a href="#" class="menu__item mt-2 p-1 d-flex align-items-center" id="curtain-button" onclick="openCurtain()">Шторы</a>
+				<a href="#" class="menu__item mt-2 p-1 d-flex align-items-center" id="sectional-doors-button" onclick="openSectionalDoors()">Ворота секционные</a>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="roller-blinds" id="roller-blinds">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="roller-blinds__title title-catalog col-lg-3">Рольшторы</h1>
+				<div class="roller-blinds__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Рольшторы</b></p>
+				</div>
+			</div>
+			<p class="roller-blinds__text"></p>
+
+			<div class="roller-blinds__cards mt-lg-4 mt-md-4">
+				<div class="roller-blinds__cards_column flex-lg-row flex-md-column d-flex">
+
+					<div class="roller-blinds__system-mini product-card col-lg col-md-12 col-sm-12 p-lg-4 p-md-4 mt-md-3 wow animate__animated animate__fadeInUp">
+						<img src="../img/photos/3.jpg" class="product-card__photo img-fluid" alt="">
+						<h2 class="product-card__title mt-4">Система Mini (без короба)</h2>
+						<p class="product-card__text mt-1">Свободно свисающая система, без направляющих.&nbsp;Ввиду своей миниатюрности, система изящная и недорогая.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 42 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto" onclick="window.location.href='fabric-catalog-roller-blinds.html'">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__system-uni product-card col-lg col-md-12 col-sm-12 p-lg-4 p-md-4 ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+						<img src="../img/photos/3.jpg" class="product-card__photo img-fluid" alt="">
+						<h2 class="product-card__title mt-4">Система Uni (в коробе)</h2>
+						<p class="product-card__text mt-1">Система с направляющими. Преимуществом является возможность установки без сверления оконных рам.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 62 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto" onclick="window.location.href='fabric-catalog-roller-blinds.html'">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__system-mgs product-card col-lg col-md-12 col-sm-12 p-lg-4 p-md-4 ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+						<img src="../img/photos/3.jpg" class="product-card__photo img-fluid" alt="">
+						<h2 class="product-card__title mt-4">Система MGS (короб-прикрытие)</h2>
+						<p class="product-card__text mt-1">Данная система без направляющих. Отличительной особенностью является установка на большие проемы.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 68 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto" onclick="window.location.href='fabric-catalog-roller-blinds.html'">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="roller-blinds__cards_column flex-lg-row flex-md-column d-flex mt-lg-3">
+					<div class="roller-blinds__electric product-card col-lg col-md-12 p-lg-4 p-md-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+						<img src="../img/photos/3.jpg" class="product-card__photo img-fluid d-flex" alt="">
+						<h2 class="product-card__title mt-4">Электрические</h2>
+						<p class="product-card__text mt-1">Лучший&nbsp;вариант&nbsp;для&nbsp;штор, расположенных&nbsp;в&nbsp;недоступных для ручного управления местах или в помещениях, где&nbsp;нет&nbsp;свободного доступа к оконным проемам.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 350 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto" onclick="window.location.href='fabric-catalog-roller-blinds.html'">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__day-night product-card col-lg col-md-12 p-lg-4 p-md-4  ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+						<img src="../img/photos/3.jpg" class="product-card__photo img-fluid d-flex" alt="">
+						<h2 class="product-card__title mt-4">День-Ночь</h2>
+						<p class="product-card__text mt-1">Благодаря чередующимся прозрачным и непрозрачным полосам, есть возможность изменять интенсивность светопропускания в помещении.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 42 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto" onclick="window.location.href='fabric-catalog-day-night.html'">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__blackout product-card col-lg col-md-6 p-lg-4 p-md-4  ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+						<img src="../img/photos/3.jpg" class="product-card__photo img-fluid d-flex" alt="">
+						<h2 class="product-card__title mt-4">Блэкаут</h2>
+						<p class="product-card__text mt-1">Производятся с использованием сверхплотной ткани, благодаря которой даже при ярком солнечном свете можно создать абсолютную темноту в помещении.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 42 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto" onclick="window.location.href='fabric-catalog-blackout.html'">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<img src="../img/photos/branch-mirror.png" class="img-fluid float-right" width="223" height="422" style="margin-top: -50px;">
+	</section>
+
+
+	<section style="display: none" class="vertical-blinds" id="vertical-blinds">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="vertical-blinds__title title-catalog col-lg-4">Вертикальные жалюзи</h1>
+				<div class="vertical-blinds__navigation navigation col-lg-4 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Вертикальные жалюзи</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="horizontal-blinds" id="horizontal-blinds">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="horizontal-blinds__title title-catalog col-lg-4">Горизонтальные жалюзи</h1>
+				<div class="horizontal-blinds__navigation navigation col-lg-4 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Горизонтальные жалюзи</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="roman-blinds" id="roman-blinds">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="roman-blinds__title title-catalog col-lg-3">Римские шторы</h1>
+				<div class="roman-blinds__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Римские шторы</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="japanese-panels" id="japanese-panels">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="japanese-panels__title title-catalog col-lg-3">Японские панели</h1>
+				<div class="japanese-panels__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Японские панели</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="pleated" id="pleated">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="pleated__title title-catalog col-lg-3">Плиссе</h1>
+				<div class="pleated__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Плиссе</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="display: none" class="bamboo" id="bamboo">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="bamboo__title title-catalog col-lg-3">Бамбук</h1>
+				<div class="bamboo__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Бамбук</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="cornices" id="cornices">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="cornices__title title-catalog col-lg-3">Карнизы</h1>
+				<div class="cornices__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Карнизы</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="mosquito-nets" id="mosquito-nets">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="mosquito-nets__title title-catalog col-lg-3">Москитные сетки</h1>
+				<div class="mosquito-nets__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Москитные сетки</b></p>
+				</div>
+
+				<div class="roller-blinds__cards mt-lg-4 mt-md-4">
+				<div class="roller-blinds__cards_column flex-lg-row flex-md-column d-flex">
+
+					<div class="roller-blinds__system-mini product-card col-lg col-md-12 col-sm-12 p-lg-4 p-md-4 mt-md-3 wow animate__animated animate__fadeInUp">
+						<img src="../img/photos/сетка.jpg" class="product-card__photo img-fluid" alt="">
+						<h2 class="product-card__title mt-4">Рамочные</h2>
+						<p class="product-card__text mt-1">Самый распространённый вариант москитных сеток. Изделие имеет простую конструкцию. Особенностью являются специальные ручки.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 42 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__system-uni product-card col-lg col-md-12 col-sm-12 p-lg-4 p-md-4 ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+						<img src="../img/photos/сетка.jpg" class="product-card__photo img-fluid" alt="">
+						<h2 class="product-card__title mt-4">Роллетные</h2>
+						<p class="product-card__text mt-1">Изделие представляет собой сетчатое полотно, свёрнутое в рулон. Рекомендуется использовать для больших окон и балконных дверей.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 62 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__system-mgs product-card col-lg col-md-12 col-sm-12 p-lg-4 p-md-4 ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+						<img src="../img/photos/сетка.jpg" class="product-card__photo img-fluid" alt="">
+						<h2 class="product-card__title mt-4">Плиссе</h2>
+						<p class="product-card__text mt-1">Представляет собой необычную конструкцию в виде гармошки, имеющей ширину складки не более 10 мм. Это идеальный вариант для больших окон.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 68 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="roller-blinds__cards_column flex-lg-row flex-md-column d-flex mt-lg-3">
+					<div class="roller-blinds__electric product-card col-lg col-md-12 p-lg-4 p-md-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+						<img src="../img/photos/сетка.jpg" class="product-card__photo img-fluid d-flex" alt="">
+						<h2 class="product-card__title mt-4">Распашная</h2>
+						<p class="product-card__text mt-1">Вид москитных сеток, который идеально подходит для дверей на веранду, открытую террасу. Изготавливается на усиленном профиле.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 350 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__day-night product-card col-lg col-md-12 p-lg-4 p-md-4  ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+						<img src="../img/photos/сетка.jpg" class="product-card__photo img-fluid d-flex" alt="">
+						<h2 class="product-card__title mt-4">Антикошка</h2>
+						<p class="product-card__text mt-1">Изготавливаются из полотна высокой плотности, которое не повреждается когтями и предотвращает выпадение животных из окон.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 42 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto">В каталог		&ensp;&rarr;</button>
+						</div>
+					</div>
+					<div class="roller-blinds__blackout product-card col-lg col-md-6 p-lg-4 p-md-4  ml-lg-4 mt-md-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">	
+					<img src="../img/photos/сетка.jpg" class="product-card__photo img-fluid d-flex" alt="">
+						<h2 class="product-card__title mt-4">Антикошка</h2>
+						<p class="product-card__text mt-1">Изготавливаются из полотна высокой плотности, которое не повреждается когтями и предотвращает выпадение животных из окон.</p>
+						<div class="flex-row d-flex align-items-start">
+							<h3 class="product-card__price"><span class="from">от</span> 42 <span class="price">BYN</span></h3>
+							<button class="button-secondary ml-auto">В каталог		&ensp;&rarr;</button>
+						</div>	
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="curtain" id="curtain">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="curtain__title title-catalog col-lg-3">Шторы</h1>
+				<div class="curtain__navigation navigation col-lg-3 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Шторы</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section style="display: none" class="sectional-doors" id="sectional-doors">
+		<img src="../img/photos/branch.png" class="branch img-fluid" width="223" height="422" alt="">
+		<div class="container">
+			<div class="row">
+				<h1 class="sectional-doors__title title-catalog col-lg-4">Ворота секционные</h1>
+				<div class="sectional-doors__navigation navigation col-lg-4 d-flex ml-auto justify-content-end align-items-center">
+					<p>Главная&emsp;&gt;</p>
+					<p>&emsp;Каталог&emsp;&gt;</p>
+					<p>&emsp;<b>Ворота секционные</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+
+	<section class="calculator wow animate__animated animate__fadeInUp" id="calculator">
+		<div class="container">
+			<h1 class="calculator__title title-catalog col-lg-3">Рассчёт стоимости</h1>
+			<div class="calculator__content flex-lg-row flex-md-row d-flex align-items-center justify-content-center">
+				<div class="calculator__form flex-column d-flex col-lg-7 col-md-5 mr-auto">
+					<div class="flex-row d-flex">
+						<div class="calculator__width">
+							<label for="width" class="form-label">Ширина, см:</label>
+	  						<input type="text" class="form-control calculator__input" id="width" placeholder="40" min="40" pattern="[0-9]{,3}" title="Неверный формат">
+						</div>
+						<div class="calculator__height ml-4">
+							<label for="height" class="form-label">Высота, см:</label>
+	  						<input type="text" class="form-control calculator__input" id="height" placeholder="40">
+						</div>
+						<div class="calculator__quantity ml-4">
+							<label for="quantity" class="form-label">Количество, шт:</label>
+	  						<input type="text" class="form-control calculator__input" id="quantity" placeholder="1">
+						</div>
+					</div>
+					<div class="calculator__system mt-4">
+						<h3>Система установки:</h3>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="system" id="mini" value="Mini" onclick="openSystem()">
+	  						<label class="form-check-label" for="mini">Mini</label>
+						</div>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="system" id="uni" value="Uni" checked onclick="openSystem()">
+	  						<label class="form-check-label" for="uni">Uni</label>
+						</div>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="system" id="mgs" value="Mgs" onclick="openSystem()">
+	  						<label class="form-check-label" for="mgs">Mgs</label>
+						</div>
+					</div>
+					<div class="calculator__additionally mt-4">
+						<h3>Дополнительная комплектация:</h3>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="additionally" id="White" value="White" onclick="openAdditional()">
+	  						<label class="form-check-label" for="White">Белая</label>
+						</div>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="additionally" id="Brown" value="Brown" onclick="openAdditional()" checked>
+	  						<label class="form-check-label" for="Brown">Коричневая</label>
+						</div>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="additionally" id="Tree" value="Tree" onclick="openAdditional()">
+	  						<label class="form-check-label" for="Tree">Ламинация</label>
+						</div>
+					</div>
+					<div class="calculator__type-of-fabric mt-4">
+						<h3>Тип ткани:</h3>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="type-of-fabric" id="standart" value="Standart" onclick="openStandart()" >
+	  						<label class="form-check-label" for="standart">Стандарт</label>
+						</div>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="type-of-fabric" id="day-night" value="Day-night" onclick="openDayNight()" checked>
+	  						<label class="form-check-label" for="day-night">День-ночь</label>
+						</div>
+						<div class="form-check form-check-inline">
+	  						<input class="form-check-input" type="radio" name="type-of-fabric" id="blackout" value="Blackout" onclick="openBlackout()">
+	  						<label class="form-check-label" for="blackout">Блэкаут</label>
+						</div>
+					</div>
+					<div class="flex-row d-flex mt-4">
+						<div class="calculator__name-of-fabric">
+							<label for="name-of-fabric" class="form-label">Название ткани:</label>
+	    						<select id="names-of-standart" class="form-select calculator__input" onclick="standartNames()"  style="display: none;">
+	      							<option value="ab" selected>AB</option>
+	     							<option value="ar">AR</option>
+	     							<option value="wz">WZ</option>
+	     							<option value="di">DI</option>
+	    						</select>
+	    						<select id="names-of-day-night" class="form-select calculator__input" onclick="dayNightNames()" >
+	      							<option value="juventus">Juventus</option>
+	     							<option value="luxury" selected>Luxury</option>
+	     							<option value="marbella">Marbella</option>
+	    						</select>
+	    						<select id="names-of-blackout" class="form-select calculator__input" style="display: none;" onclick="blackoutNames()">
+	      							<option value="i" selected>I (BO)</option>
+	     							<option value="nox">NOX (BO)</option>
+	     							<option value="pb">PB (BO)</option>
+	     							<option value="sf">SF (BO)</option>
+	     							<option value="str">STR (BO)</option>
+	    						</select>
+						</div>
+						<div class="calculator__number-of-color ml-4">
+							<label for="number-of-color" class="form-label">Номер цвета:</label>
+								<select id="number-of-ab" style="display: none;" class="form-select calculator__input" onclick="AB()">
+	      							<option value="401" selected>401</option>
+	     							<option value="403">403</option>
+	     							<option value="404">404</option>
+	     							<option value="405">405</option>
+	     							<option value="406">406</option>
+	     							<option value="407">407</option>
+	    						</select>
+	    						<select id="number-of-ar" style="display: none;" class="form-select calculator__input" onclick="AR()">
+	      							<option value="1839" selected>1839</option>
+	     							<option value="1842">1842</option>
+	     							<option value="2236">2236</option>
+	     							<option value="2282">2282</option>
+	    						</select>
+	    						<select id="number-of-wz" style="display: none;" class="form-select calculator__input" onclick="WZ()">
+	      							<option value="wz03" selected>03</option>
+	     							<option value="wz04">04</option>
+	     							<option value="wz11">11</option>
+	     							<option value="wz13">13</option>
+	     							<option value="wz14">14</option>
+	     							<option value="wz16">16</option>
+	     							<option value="wz17">17</option>
+	     							<option value="wz18">18</option>
+	     							<option value="wz19">19</option>
+	    						</select>
+	    						<select id="number-of-di" style="display: none;" class="form-select calculator__input" onclick="DI()">
+	      							<option value="7466" selected>7466</option>
+	     							<option value="7467">7467</option>
+	    						</select>
+
+	    						<select id="number-of-juventus" class="form-select calculator__input" style="display: none;" onclick="juventus()">
+	      							<option value="02" selected >02</option>
+	     							<option value="03">03</option>
+	     							<option value="07">07</option>
+	     							<option value="10">10</option>
+	     							<option value="j11">11</option>
+	    						</select>
+	    						<select id="number-of-luxury" class="form-select calculator__input" onclick="luxury()">
+	      							<option value="11" selected>11</option>
+	     							<option value="12">12</option>
+	     							<option>14</option>
+	     							<option>16</option>
+	     							<option>18</option>
+	    						</select>
+	    						<select id="number-of-marbella" class="form-select calculator__input" style="display: none;" onclick="marbella()">
+	      							<option value="601" selected>601</option>
+	     							<option value="602">602</option>
+	     							<option value="603">603</option>
+	     							<option value="604">604</option>
+	     							<option value="605">605</option>
+	     							<option value="606">606</option>
+	     							<option value="607">607</option>
+	     							<option value="608">608</option>
+	     							<option value="609">609</option>
+	     							<option value="610">610</option>
+	    						</select>
+	    						
+	    						<select id="number-of-I(BO)" class="form-select calculator__input" style="display: none;" onclick="I()">
+	      							<option value="i2" selected>2</option>
+	     							<option value="i3">3</option>
+	     							<option value="i4">4</option>
+	     							<option value="i5">5</option>
+	     							<option value="i6">6</option>
+	     							<option value="i7">7</option>
+	     							<option value="i8">8</option>
+	     							<option value="i9">9</option>
+	     							<option value="i10">10</option>
+	     							<option value="0551">0551</option>
+	     							<option value="0576">0576</option>
+	     							<option value="0582">0582</option>
+	     							<option value="0591">0591</option>
+	    						</select>
+	    						<select id="number-of-NOX(BO)" class="form-select calculator__input" style="display: none;" onclick="NOX()">
+	      							<option value="nox3" selected>3</option>
+	     							<option value="nox4">4</option>
+	     							<option value="nox5">5</option>
+	    						</select>
+	    						<select id="number-of-PB(BO)" class="form-select calculator__input" style="display: none;" onclick="PB()">
+	      							<option value="pb01" selected>01</option>
+	     							<option value="pb02">02</option>
+	    						</select>
+	    						<select id="number-of-SF(BO)" class="form-select calculator__input" style="display: none;" onclick="SF()">
+	      							<option value="sf01" selected>01</option>
+	     							<option value="sf02">02</option>
+	     							<option value="sf03">03</option>
+	     							<option value="sf04">04</option>
+	    						</select>
+	    						<select id="number-of-STR(BO)" class="form-select calculator__input" style="display: none;" onclick="STR()">
+	      							<option value="str1" selected>1</option>
+	     							<option value="str2">2</option>
+	     							<option value="str3">3</option>
+	     							<option value="str4">4</option>
+	     							<option value="str5">5</option>
+	    						</select>
+						</div>
+					</div>
+					<div class="calculator__footer flex-column d-flex col-lg-8">
+						<div class="flex-row d-flex align-items-center">
+							<button type="button" class="button-standart big-button" onclick="fun()" value="Рассчитать">Рассчитать</button>
+							<h3 class="calculator__price ml-auto"><span id="final-value">0</span> <span class="calculator__BYN">BYN</span></h3>
+						</div>
+						<p class="calculator__footnote d-flex ">*Рассчитываемая стоимость является ориентировочной. Если Вы сомневаетесь в выбранной ткани или в указанных размерах, закажите бесплатный звонок.</p>
+					</div>
+				</div>
+				
+				<div class="calculator__photo">
+					<div id="photo-mini" class="photo-mini align-self-end" style="display: none; padding-bottom: 19px;">
+						<img src="../img/photos/Калькулятор/Luxury/11.png" id="photoMini" class="img-fluid" alt="">
+					</div>
+					
+					<div id="photo-uni" class="align-self-start mt-0">
+						<img src="../img/photos/Рольшторы/День-ночь/Luxury/11.jpg" id="photo" class="photo-uni img-fluid ml-4"  alt="">
+						<img src="../img/photos/Калькулятор/коричневая.png" class="photo-uni-add img-fluid" id="color" alt="">
+					</div>
+
+					<div class="calculator__your-choice flex-row d-flex align-self-end justify-content-center mt-lg-3 mt-md-3" id="your-choice" style="display: none;">
+						<h2>Ваш выбор: </h2>
+						<p class="ml-3">Размер: <span id="your-width">0</span>х<span id="your-height">0</span><br>
+						Количество:<span id="your-quantity">&nbsp;0</span><br>
+						Система установки: <span id="your-system">Mini</span><br>
+						Комплектация: <span id="your-additional">Mini</span><br>
+						Ткань: <span id="your-fabric-type">День-ночь</span> <span id="your-fabric-name">Luxury</span>-<span id="your-fabric-number">4</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="footer">
+		<nav>
+		<div class="container">
+			<div class="footer__brand row d-flex align-items-center mt-lg-4">
+				<a href="#" class="footer__logo col-lg">
+					<img src="../img/logo/Logo.png" alt="" width="252" height="78">
+				</a>
+				<a href="#" class="footer__place disabled col-lg-3 d-flex justify-content-end align-items-center"><img src="../img/icons/pin.png" alt="" width="25" height="25">&ensp;Минск, Беларусь</a>
+			</div>
+
+			<div class="footer__navigation row mt-lg-5">
+				<div class="col-lg-2">
+					<div class="flex-column">
+						<a href="#" class="nav-link disabled"><b>По сайту</b></a>
+						<a href="#" class="nav-link">Главная</a>
+						<a href="#" class="nav-link">Каталог</a>
+						<a href="#" class="nav-link">Наши работы</a>
+					</div>
+				</div>
+				<div class="col-lg-2 d-flex justify-content-center">
+					<div class="flex-column">
+						<a href="#" class="nav-link"><b>Рольшторы</b></a>
+						<a href="#" class="nav-link">Система Mini</a>
+						<a href="#" class="nav-link">Система Uni</a>
+						<a href="#" class="nav-link">Система MGS</a>
+						<a href="#" class="nav-link">Электрические</a>
+						<a href="#" class="nav-link">День-Ночь</a>
+						<a href="#" class="nav-link">Блэкаут</a>
+						<a href="#" class="nav-link mt-2"><b>Римские шторы</b></a>
+					</div>
+				</div>
+				<div class="col-lg-3 d-flex justify-content-center">
+					<div class="flex-column">
+						<a href="#" class="nav-link"><b>Горизонтальные жалюзи</b></a>
+						<a href="#" class="nav-link">Алюминиевые</a>
+						<a href="#" class="nav-link">Деревянные</a>
+						<a href="#" class="nav-link">Бамбук</a>
+						<a href="#" class="nav-link">Исотра</a>
+						<a href="#" class="nav-link mt-2"><b>Вертикальные жалюзи</b></a>
+						<a href="#" class="nav-link mt-2"><b>Японские панели</b></a>
+						<a href="#" class="nav-link mt-2"><b>Плиссе</b></a>
+						<a href="#" class="nav-link mt-2"><b>Ворота секционные</b></a>
+					</div>
+				</div>
+				<div class="col-lg-2 d-flex justify-content-center">
+					<div class="flex-column">
+						<a href="#" class="nav-link"><b>Бамбук</b></a>
+						<a href="#" class="nav-link mt-2"><b>Москитные сетки</b></a>
+						<a href="#" class="nav-link">Рамочные</a>
+						<a href="#" class="nav-link">Роллетные</a>
+						<a href="#" class="nav-link">Распашная</a>
+						<a href="#" class="nav-link">Антикошка</a>
+						<a href="#" class="nav-link mt-2"><b>Карнизы</b></a>
+						<a href="#" class="nav-link mt-2"><b>Шторы</b></a>
+					</div>
+				</div>
+				<div class="col-lg-3 pr-0 float-right" style="padding-left: 100px;">
+					<a href="#" class="nav-link disabled"><b>Контакты</b></a>
+					<div class="d-flex justify-content-start p-0">
+						<a href="#" class="nav-link disabled mt-2"><img src="../img/icons/envelope.png" alt="" width="25" height="25">&ensp;&ensp;&ensp;<b>se2899@mail.ru</b></a>
+					</div>
+					<div class="d-flex justify-content-start align-items-center p-0">
+						<a href="#" class="nav-link disabled p-1 ml-3"><img src="../img/icons/call.png" alt="" width="25" height="25"></a>
+						<a href="#" class="nav-link disabled">
+							<b>+375 (29) 771-28-99<br>
+							+375 (29) 331-28-99</b>
+						</a>
+					</div>
+					<button class="button-standart button-up float-right mt-lg-5 mr-lg-4" id="top"><img src="../img/icons/Arrow-button.svg" alt=""></button>
+				</div>
+			</div>
+
+			<div class="footer-2 d-flex flex-row align-items-center">
+				<div class="footer-2__copyright col-lg-3 d-flex flex-row align-items-center align-self-end">
+					<img src="../img/icons/copyright.svg" class="img-fluid" width="15" height="15" alt="">
+					<p class="mt-3 ml-2">2020 ЧТУП "Комфорт Люкс"  УНП: 690612788</p>
+				</div>
+				<div class="footer-2__social col-lg-2 d-flex ml-auto align-items-center align-self-end mb-md-2">
+					<ul class="social d-flex flex-row justify-content-end pb-lg-3">
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/icons/telegram.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/icons/instagram.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="../img/icons/vk.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		</nav>	
+	</footer>
+
+
+
+
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+	<script src="../js/script.js"></script>
+	<script>
+		window.onload = function () {
+      	document.body.classList.add('loaded_hiding');
+      	window.setTimeout(function () {
+        	document.body.classList.add('loaded');
+        	document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+	</script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="../js/jquery.js"></script>
+</body>
+</html>
