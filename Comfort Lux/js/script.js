@@ -210,27 +210,22 @@ function openSectionalDoors() {
 function replaceImg(id, img, name, value) {
 	var a = document.getElementById(id);
 	a.src = img;
-
 	document.getElementById(name).innerHTML = value;
 }
 
+function SelectSystem(id, id_main, value, name) {
+    price = document.getElementById(id);
+    price.innerHTML = value;
+    document.getElementById(id_main).innerHTML = name;
+}
 
-function openPhoto(id, id_2) {
+
+
+function openPhoto(id) {
 	var modal = document.getElementById('myModal');
-	var click = document.getElementById(id_2);
 	var img = document.getElementById(id);
 	var modalImg = document.getElementById('img');
-
-	click.onclick = function() {
-		modal.style.display = 'block';
-        document.querySelector('section').classList.add('filter');
-        document.querySelector('header').classList.add('filter');
-        document.querySelector('footer').classList.add('filter');
-        document.querySelector('body').classList.add('remove-scroll');
-		modalImg.src = img.src;
-	}
-
-	var span = document.getElementsByClassName('close')[0];
+    var span = document.getElementsByClassName('close')[0];
 	span.onclick = function() {
 		modal.style.display = 'none';
         document.querySelector('section').classList.remove('filter');
@@ -249,44 +244,45 @@ function openPhoto(id, id_2) {
                 document.querySelector('body').classList.remove('remove-scroll');
 			}
 	}
-	
+
+    modal.style.display = 'block';
+    document.querySelector('section').classList.add('filter');
+    document.querySelector('header').classList.add('filter');
+    document.querySelector('footer').classList.add('filter');
+    document.querySelector('body').classList.add('remove-scroll');
+    modalImg.src = img.src;
 }
 
 
-function openModal(id) {
+function openModal() {
 	var modal = document.getElementById('modal-order');
-	var button = document.getElementById(id);
-
-	button.onclick = function() {
-		modal.style.display = 'block';
-        document.querySelector('section').classList.add('filter');
-        document.querySelector('header').classList.add('filter');
-        document.querySelector('footer').classList.add('filter');
-        document.getElementById('main-page').classList.add('filter');
-        document.querySelector('body').classList.add('remove-scroll');
-	}
-
-	var span = document.getElementsByClassName('close')[0];
-	span.onclick = function() {
-		modal.style.display = 'none';
+    var span = document.getElementsByClassName('close')[0];
+    span.onclick = function() {
+        modal.style.display = 'none';
         document.querySelector('section').classList.remove('filter');
         document.querySelector('header').classList.remove('filter');
         document.querySelector('footer').classList.remove('filter');
         document.getElementById('main-page').classList.remove('filter');
         document.querySelector('body').classList.remove('remove-scroll');
-	}
+    }
 
-	modal.onclick = function(e) {
-		event = e || window.e
-    		if (event.target == this) {
-        		modal.style.display = 'none';
+    modal.onclick = function(e) {
+        event = e || window.e
+            if (event.target == this) {
+                modal.style.display = 'none';
                 document.querySelector('section').classList.remove('filter');
                 document.querySelector('header').classList.remove('filter');
                 document.querySelector('footer').classList.remove('filter');
                 document.getElementById('main-page').classList.remove('filter');
                 document.querySelector('body').classList.remove('remove-scroll');
-			}
-	}
+            }
+    }
+	modal.style.display = 'block';
+    document.querySelector('section').classList.add('filter');
+    document.querySelector('header').classList.add('filter');
+    document.querySelector('footer').classList.add('filter');
+    document.getElementById('main-page').classList.add('filter');
+    document.querySelector('body').classList.add('remove-scroll');
 }
 
 

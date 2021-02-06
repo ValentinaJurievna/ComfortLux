@@ -339,7 +339,7 @@ ul, li {
 }
 
 
-.novelty-1__title, .color-picker__title, .novelty-2__title, .novelty-3__title, .novelty-4__title {
+.novelty-1__title, .color-picker__title, .system__title, .novelty-2__title, .novelty-3__title, .novelty-4__title {
 	font-family: Gotham Pro regular;
 	font-size: 15px;
 }
@@ -407,11 +407,48 @@ ul, li {
 	padding: 0!important;
 	width: auto;
 	margin-left: 8px;
+	
 }
+
 
 .dropdown-item:active, .dropdown-item:focus {
 	background-color: transparent!important;
 }
+
+.system a {
+	font-family: Gotham Pro regular;
+}
+
+.title-fabric, .installation {
+	font-family: Gotham Pro regular;
+	font-size: 0.85rem!important;
+	color: black;
+}
+
+.installation:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.system__dropdown {
+	background-color: #F0EEEF;
+	width: 10px!important;
+	text-align: center!important;
+}
+
+.system__dropdown a {}
+
+.system__dropdown a {
+	padding: 0;
+	margin: 0;
+}
+
+.system__dropdown a:hover {
+	background-color: #E1BCA2;
+	cursor: pointer;
+}
+
+.
 
 
 
@@ -785,6 +822,14 @@ ul, li {
 	margin-top: 4.6875rem;
 }
 
+.navigation a {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation a:hover {
+	color: rgba(0, 0, 0);
+}
+
 .roller-blinds__cards {
 
 }
@@ -847,31 +892,37 @@ ul, li {
 
 /* fabric */
 
+.like {
+	font-family: Gotham Pro light;
+	font-size: 0.7rem;
+}
+
 .fabric-card {
 
 }
 
 .fabric__title {
 	font-family: Gotham Pro medium;
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 .fabric__description {
 	font-family: Gotham Pro light;
-	font-size: 0.8rem;
+	font-size: 0.85rem;
 }
 
 .fabric__price {
 	font-family: Gotham Pro regular;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 }
 
 
 
 .fabric__star {
-	width: 0.9375rem;
-	height: 0.9375rem;
+	width: 0.95rem;
+	height: 0.95rem;
 }
+
 
 
 
@@ -1873,8 +1924,8 @@ form label {
 		height: 130px; 
 	}
 
-	.color-picker__title {
-		font-size: 8px!important;
+	.color-picker__title, .system__title {
+		font-size: 0.5em!important;
 	}
 
 	.color-picker__colors-color {
