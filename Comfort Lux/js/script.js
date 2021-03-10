@@ -231,7 +231,7 @@ loadEmployees();
 
 
 
-const fabricCard = document.getElementById('card');
+const fabricCard = document.getElementById('card2');
 let fabric = [];
 
 const loadFabric = async () => {
