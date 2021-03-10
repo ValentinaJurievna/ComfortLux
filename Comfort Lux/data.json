@@ -7,7 +7,7 @@
 			"darkening": "50%"
 		},
 		"fabric": {
-			"first": ["img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#DBD6BD"],
+			"first": ["../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#DBD6BD"],
 			"second": ["img/photos/Рольшторы/День-Ночь/Juventus/03.jpg", "03", "#DBBDBD"],
 			"third": ["img/photos/Рольшторы/День-Ночь/Juventus/07.jpg", "07", "#B7C8D2"],
 			"fourth": ["img/photos/Рольшторы/День-Ночь/Juventus/10.jpg", "10", "#C7B974"],
