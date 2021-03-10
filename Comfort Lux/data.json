@@ -1,13 +1,56 @@
 [
 	{
 		"id": "1",
+		"title": "Soft",
+		"description": {
+			"structure": ["65% полиэстер", "35% хлопок"],
+			"darkening": "50%"
+		},
+		"fabric": {
+			"one": ["../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg", "s06", "#664E3E"],
+			"two": ["../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg", "s05", "#CFC2B0"],
+			"three": ["../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg", "s04", "#A6937C"],
+			"four": ["../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg", "s03", "#CBAA86"],
+			"five": ["../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg", "s02", "#70655C"],
+
+			"six": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg", "bh1807", "#A08E5B"],
+			"seven": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg", "bh1805", "#CAAF47"],
+			"eight": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg", "bh1804", "#AD1E1E"],
+			"nine": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg", "bh1802", "#B7591D"],
+			"ten": ["../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg", "bh10", "#BC9D92"],
+
+			"eleven": ["../img/photos/Рольшторы/День-Ночь/Soft/s15.jpg", "s15", "#322826"],
+			"twelve": ["../img/photos/Рольшторы/День-Ночь/Soft/s10.jpg", "s10", "#DBAD62"],
+			"thirteen": ["../img/photos/Рольшторы/День-Ночь/Soft/s09.jpg", "s09", "#9D6333"],
+			"fourteen": ["../img/photos/Рольшторы/День-Ночь/Soft/s08.jpg", "s08", "#643F46"],
+			"fifteen": ["../img/photos/Рольшторы/День-Ночь/Soft/s07.jpg", "s07", "#8D3833"],
+
+			"sixteen": ["../img/photos/Рольшторы/День-Ночь/Soft/s01.jpg", "s01", "#BCB8B5"],
+			"seventeen": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1812.jpg", "bh1812", "#5C2B2C"],
+			"eighteen": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1810.jpg", "bh1810", "#1A1C29"],
+			"nineteen": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1809.jpg", "bh1809", "#3C6064"],
+			"twenty": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg", "bh1808", "#5C5867"],
+
+			"twentyOne": ["../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg", "bh04", "#909093"],
+			"twentyTwo": ["../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg", "1800", "#903220"],
+			"twentyThree": ["../img/photos/Рольшторы/День-Ночь/Soft/1100.jpg", "1100", "#323031"],
+			"twentyFour": ["../img/photos/Рольшторы/День-Ночь/Soft/112.jpg", "112", "#A7A197"],
+			"twentyFive": ["../img/photos/Рольшторы/День-Ночь/Soft/s17.jpg", "s17", "#1C1B1A"]
+		},
+		"cost": {
+			"installation": ["Mini", "Uni", "Mgs"],
+			"price": [66, 81, 105]
+		}
+	},
+	{
+		"id": "2",
 		"title": "Juventus",
 		"description": {
 			"structure": ["65% полиэстер", "35% хлопок"],
 			"darkening": "50%"
 		},
 		"fabric": {
-			"first": ["../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#DBD6BD"],
+			"1": ["../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#DBD6BD"],
 			"second": ["../img/photos/Рольшторы/День-Ночь/Juventus/03.jpg", "03", "#DBBDBD"],
 			"third": ["../img/photos/Рольшторы/День-Ночь/Juventus/07.jpg", "07", "#B7C8D2"],
 			"fourth": ["../img/photos/Рольшторы/День-Ночь/Juventus/10.jpg", "10", "#C7B974"],
@@ -17,25 +60,7 @@
 			"installation": ["Mini", "Uni", "Mgs"],
 			"price": [74, 87, 121]
 		}
-	},
-	{
-		"id": "2",
-		"title": "Soft",
-		"description": {
-			"structure": ["65% полиэстер", "35% хлопок"],
-			"darkening": "50%"
-		},
-		"fabric": {
-			"first": ["../img/photos/Рольшторы/День-Ночь/Soft/02.jpg", "02", "#DBD6BD"],
-			"second": ["../img/photos/Рольшторы/День-Ночь/Soft/03.jpg", "03", "#DBBDBD"],
-			"third": ["../img/photos/Рольшторы/День-Ночь/Soft/07.jpg", "07", "#B7C8D2"],
-			"fourth": ["../img/photos/Рольшторы/День-Ночь/Soft/10.jpg", "10", "#C7B974"],
-			"fifth": ["../img/photos/Рольшторы/День-Ночь/Soft/11.jpg", "11", "#7E5D45", ""]
-		},
-		"cost": {
-			"installation": ["Mini", "Uni", "Mgs"],
-			"price": [321, 127, 21]
-		}
 	}
+	
 	
 ]
