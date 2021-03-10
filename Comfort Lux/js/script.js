@@ -1,3 +1,237 @@
+const employeesGrid = document.getElementById('card');
+
+let employees = [];
+
+const loadEmployees = async () => {
+    try {
+        const res = await fetch('https://valentinajurievna.github.io/ComfortLux/Comfort%20Lux/data.json');
+        employees = await res.json();
+        displayEmployeesGrid(employees);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const displayEmployeesGrid = (employees) => {
+		const htmlString = employees
+        .map((employee) => {
+            return `
+            <div class="fabric-card p-4 flex-row d-flex col-lg-6 col-md-12 mt-md-5 mt-lg-0 mr-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <div class="fabric-card__photos flex-column d-flex">
+                <div class="fabric-card__photo">
+                    <div class="d-flex justify-content-end">
+                        <div class="fabric-card__name-of-fabric align-self-end">
+                            <h3 class="d-flex justify-content-center align-items-center mt-3" id="fabric-name-card-5">${employee.fabric.one[1]}</h3>
+                        </div>
+                        <img src="${employee.fabric.one[0]}" class="fabric-card__big-photo img-fluid" id="fabric-card__big-photo-card-5">
+                    </div>
+                    <div class="hover-effect" id="hover-effect-5" onclick="openPhoto('fabric-card__big-photo-card-5', 'hover-effect-5')"  >
+                        <a href="#"><img src="../img/icons/visibility.svg" class="img-fluid" alt=""></a>
+                    </div>
+                </div>
+                <div id="carousel-card-5" class="carousel slide mt-4" data-ride="carousel" data-interval="false" data-touch="true">
+                      <div class="carousel-inner align-items-center">
+                        <div class="carousel-item active">
+                              <div class="flex-row d-flex justify-content-center">
+                                    <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.two[0]}', 'fabric-name-card-5', '${employee.fabric.two[1]}')">
+                                          <img src="${employee.fabric.two[0]}" class="img-fluid">
+                                    </div>
+                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.three[0]}', 'fabric-name-card-5', '${employee.fabric.three[1]}')">
+                                         <img src="${employee.fabric.three[0]}" class="img-fluid">
+                                    </div>
+                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.four[0]}', 'fabric-name-card-5', '${employee.fabric.four[1]}')">
+                                         <img src="${employee.fabric.four[0]}" class="img-fluid">
+                                    </div>
+                                  </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.five[0]}','fabric-name-card-5', '${employee.fabric.five[1]}')">
+                                      <img src="${employee.fabric.five[0]}" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.six[0]}','fabric-name-card-5', '${employee.fabric.six[1]}')">
+                                     <img src="${employee.fabric.six[0]}" class="img-fluid">
+                                </div>	
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.seven[0]}','fabric-name-card-5', '${employee.fabric.seven[1]}')">
+                                     <img src="${employee.fabric.seven[0]}" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eight[0]}','fabric-name-card-5', '${employee.fabric.eight[1]}')">
+                                      <img src="${employee.fabric.eight[0]}" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.nine[0]}','fabric-name-card-5', '${employee.fabric.nine[1]}')">
+                                     <img src="${employee.fabric.nine[0]}" class="img-fluid">
+                                </div>	
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.ten[0]}','fabric-name-card-5', '${employee.fabric.ten[1]}')">
+                                     <img src="${employee.fabric.ten[0]}" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eleven[0]}','fabric-name-card-5', '${employee.fabric.eleven[1]}')">
+                                      <img src="${employee.fabric.eleven[0]}" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twelve[0]}','fabric-name-card-5', '${employee.fabric.twelve[1]}')">
+                                     <img src="${employee.fabric.twelve[0]}" class="img-fluid">
+                                </div>	
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.thirteen[0]}','fabric-name-card-5', '${employee.fabric.thirteen[1]}')">
+                                     <img src="${employee.fabric.thirteen[0]}" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fourteen[0]}','fabric-name-card-5', '${employee.fabric.fourteen[1]}')">
+                                      <img src="${employee.fabric.fourteen[0]}" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.fifteen[0]}','fabric-name-card-5', '${employee.fabric.fifteen[1]}')">
+                                     <img src="${employee.fabric.fifteen[0]}" class="img-fluid">
+                                </div>	
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.sixteen[0]}','fabric-name-card-5', '${employee.fabric.sixteen[1]}')">
+                                     <img src="${employee.fabric.sixteen[0]}" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.seventeen[0]}','fabric-name-card-5', '${employee.fabric.seventeen[1]}')">
+                                      <img src="${employee.fabric.seventeen[0]}" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.eighteen[0]}','fabric-name-card-5', '${employee.fabric.eighteen[1]}')">
+                                     <img src="${employee.fabric.eighteen[0]}" class="img-fluid">
+                                </div>	
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.nineteen[0]}','fabric-name-card-5', '${employee.fabric.nineteen[1]}')">
+                                     <img src="${employee.fabric.nineteen[0]}" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex-row d-flex justify-content-center">
+                            <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twenty[0]}','fabric-name-card-5', '${employee.fabric.twenty[1]}')">
+                                    <img src="${employee.fabric.twenty[0]}" class="img-fluid">
+                            </div>
+                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyOne[0]}','fabric-name-card-5', '${employee.fabric.twentyOne[1]}')">
+                                <img src="${employee.fabric.twentyOne[0]}" class="img-fluid">
+                            </div>	
+                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyTwo[0]}','fabric-name-card-5', '${employee.fabric.twentyTwo[1]}')">
+                                <img src="${employee.fabric.twentyTwo[0]}" class="img-fluid">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex-row d-flex justify-content-center">
+                            <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyThree[0]}','fabric-name-card-5', '${employee.fabric.twentyThree[1]}')">
+                                    <img src="${employee.fabric.twentyThree[0]}" class="img-fluid">
+                            </div>
+                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyFour[0]}','fabric-name-card-5', '${employee.fabric.twentyFour[1]}')">
+                                <img src="${employee.fabric.twentyFour[0]}" class="img-fluid">
+                            </div>	
+                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyFive[0]}','fabric-name-card-5', '${employee.fabric.twentyFive[1]}')">
+                                <img src="${employee.fabric.twentyFive[0]}" class="img-fluid">
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev justify-content-start" href="#carousel-card-5" role="button" data-slide="prev">
+                        <img src="../img/icons/back.png">
+                      </a>
+                      <a class="carousel-control-next justify-content-end" href="#carousel-card-5" role="button" data-slide="next">
+                            <img src="../img/icons/next.png">
+                      </a>
+                </div>
+            </div>
+
+            <div class="fabric__content flex-column d-flex ml-5">
+                    <h2 class="fabric__title mt-0">${employee.title}</h2>
+                    <p class="fabric__description mt-1"><b>Состав:</b> ${employee.description.structure[0]}, <br>${employee.description.structure[1]}<br><b>Затемнение:</b> ${employee.description.darkening}</p>
+                    <div class="system d-flex flex-row align-self-baseline mt-5">
+                        <div class="d-flex align-items-baseline">
+                            <h3 class="title-fabric">Установка:&ensp;</h3>
+                            <a id="installation-5" class="installation"> Mini</a>
+                        </div>
+
+                        <div class="dropdown p-0">
+                            <div id="dropdownMenuSystem5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../img/icons/bottom.svg" class="color-picker__arrow ml-2 mt-1" width="8" height="8">
+                            </div>
+                            <div class="system__dropdown dropdown-menu mt-0" aria-labelledby="dropdownMenuSystem5">
+                                <a class="dropdown-item" href="#!" id="system_uni" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[1]}, '${employee.cost.installation[1]}')"> Uni</a>
+                                <a class="dropdown-item" href="#!" id="system_mgs" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[2]}, '${employee.cost.installation[2]}')"> Mgs</a>
+                                <a class="dropdown-item" href="#!" id="system_mini" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[0]}, '${employee.cost.installation[0]}')"> Mini</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="color-picker d-flex flex-row align-self-baseline mt-1">
+                        <h3 class="title-fabric">Цвета: </h3>
+                        <div class="color-picker__colors d-flex flex-row align-self-baseline">
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eighteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eighteen[0]}','fabric-name-card-5', '${employee.fabric.eighteen[1]}')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.two[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.two[0]}','fabric-name-card-5', '${employee.fabric.two[1]}')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.three[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.three[0]}','fabric-name-card-5', '${employee.fabric.three[1]}')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.four[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.four[0]}','fabric-name-card-5', '${employee.fabric.four[1]}')"></div>
+                        </div>
+
+                        <div class="dropdown p-0">
+                            <div id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../img/icons/bottom.svg" class="color-picker__arrow ml-2" width="9" height="9">
+                            </div>
+                            <div class="color-picker__dropdown dropdown-menu mt-0" aria-labelledby="dropdownMenu5" >
+                                <div class="d-flex flex-row">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.five[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.five[0]}','fabric-name-card-5', '${employee.fabric.five[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.six[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.six[0]}','fabric-name-card-5', '${employee.fabric.six[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.seven[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.seven[0]}','fabric-name-card-5', '${employee.fabric.seven[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eight[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eight[0]}','fabric-name-card-5', '${employee.fabric.eight[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.nine[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.nine[0]}','fabric-name-card-5', '${employee.fabric.nine[1]}')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.ten[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.ten[0]}','fabric-name-card-5', '${employee.fabric.ten[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eleven[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eleven[0]}','fabric-name-card-5', '${employee.fabric.eleven[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twelve[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twelve[0]}','fabric-name-card-5', '${employee.fabric.twelve[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.thirteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.thirteen[0]}','fabric-name-card-5', '${employee.fabric.thirteen[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.fourteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fourteen[0]}','fabric-name-card-5', '${employee.fabric.fourteen[1]}')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.fifteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fifteen[0]}','fabric-name-card-5', '${employee.fabric.fifteen[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.sixteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.sixteen[0]}','fabric-name-card-5', '${employee.fabric.sixteen[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.seventeen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.seventeen[0]}','fabric-name-card-5', '${employee.fabric.seventeen[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.nineteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.nineteen[0]}','fabric-name-card-5', '${employee.fabric.nineteen[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twenty[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twenty[0]}','fabric-name-card-5', '${employee.fabric.twenty[1]}')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyOne[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyOne[0]}','fabric-name-card-5', '${employee.fabric.twentyOne[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyTwo[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyTwo[0]}','fabric-name-card-5', '${employee.fabric.twentyTwo[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyThree[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyThree[0]}','fabric-name-card-5', '${employee.fabric.twentyThree[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyFour[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyFour[0]}','fabric-name-card-5', '${employee.fabric.twentyFour[1]}')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyFive[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyFive[0]}','fabric-name-card-5', '${employee.fabric.twentyFive[1]}')"></div></a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fabric__order flex-column d-flex" style="margin-top: 37px;">
+                        <div class="fabric__price"><span id="number-5">${employee.cost.price[0]}</span> <span class="price">BYN./м<sup>2</sup></span></div>
+                        <button class="button-secondary big-button button mt-2 ml-lg-auto" onclick="openModal()">Заказать</button>
+                    </div>
+            </div>
+        </div>  	
+        `;
+        })
+        .join('');
+    employeesGrid.innerHTML = htmlString;
+};
+
+
+loadEmployees();
+
+
+
+
+
+
+
 function close(id, id_button) {
 	state = document.getElementById(id).style.display;
 	if (state == '') {
@@ -1642,233 +1876,7 @@ function openAdditional() {
 
 
 
-const employeesGrid = document.getElementById('card');
 
-let employees = [];
-
-const loadEmployees = async () => {
-    try {
-        const res = await fetch('https://valentinajurievna.github.io/ComfortLux/Comfort%20Lux/data.json');
-        employees = await res.json();
-        displayEmployeesGrid(employees);
-    } catch (err) {
-        console.error(err);
-    }
-};
-
-const displayEmployeesGrid = (employees) => {
-		const htmlString = employees
-        .map((employee) => {
-            return `
-            <div class="fabric-card p-4 flex-row d-flex col-lg-6 col-md-12 mt-md-5 mt-lg-0 mr-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-            <div class="fabric-card__photos flex-column d-flex">
-                <div class="fabric-card__photo">
-                    <div class="d-flex justify-content-end">
-                        <div class="fabric-card__name-of-fabric align-self-end">
-                            <h3 class="d-flex justify-content-center align-items-center mt-3" id="fabric-name-card-5">${employee.fabric.one[1]}</h3>
-                        </div>
-                        <img src="${employee.fabric.one[0]}" class="fabric-card__big-photo img-fluid" id="fabric-card__big-photo-card-5">
-                    </div>
-                    <div class="hover-effect" id="hover-effect-5" onclick="openPhoto('fabric-card__big-photo-card-5', 'hover-effect-5')"  >
-                        <a href="#"><img src="../img/icons/visibility.svg" class="img-fluid" alt=""></a>
-                    </div>
-                </div>
-                <div id="carousel-card-5" class="carousel slide mt-4" data-ride="carousel" data-interval="false" data-touch="true">
-                      <div class="carousel-inner align-items-center">
-                        <div class="carousel-item active">
-                              <div class="flex-row d-flex justify-content-center">
-                                    <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.two[0]}', 'fabric-name-card-5', '${employee.fabric.two[1]}')">
-                                          <img src="${employee.fabric.two[0]}" class="img-fluid">
-                                    </div>
-                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.three[0]}', 'fabric-name-card-5', '${employee.fabric.three[1]}')">
-                                         <img src="${employee.fabric.three[0]}" class="img-fluid">
-                                    </div>
-                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.four[0]}', 'fabric-name-card-5', '${employee.fabric.four[1]}')">
-                                         <img src="${employee.fabric.four[0]}" class="img-fluid">
-                                    </div>
-                                  </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.five[0]}','fabric-name-card-5', '${employee.fabric.five[1]}')">
-                                      <img src="${employee.fabric.five[0]}" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.six[0]}','fabric-name-card-5', '${employee.fabric.six[1]}')">
-                                     <img src="${employee.fabric.six[0]}" class="img-fluid">
-                                </div>	
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.seven[0]}','fabric-name-card-5', '${employee.fabric.seven[1]}')">
-                                     <img src="${employee.fabric.seven[0]}" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eight[0]}','fabric-name-card-5', '${employee.fabric.eight[1]}')">
-                                      <img src="${employee.fabric.eight[0]}" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.nine[0]}','fabric-name-card-5', '${employee.fabric.nine[1]}')">
-                                     <img src="${employee.fabric.nine[0]}" class="img-fluid">
-                                </div>	
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.ten[0]}','fabric-name-card-5', '${employee.fabric.ten[1]}')">
-                                     <img src="${employee.fabric.ten[0]}" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eleven[0]}','fabric-name-card-5', '${employee.fabric.eleven[1]}')">
-                                      <img src="${employee.fabric.eleven[0]}" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twelve[0]}','fabric-name-card-5', '${employee.fabric.twelve[1]}')">
-                                     <img src="${employee.fabric.twelve[0]}" class="img-fluid">
-                                </div>	
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.thirteen[0]}','fabric-name-card-5', '${employee.fabric.thirteen[1]}')">
-                                     <img src="${employee.fabric.thirteen[0]}" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fourteen[0]}','fabric-name-card-5', '${employee.fabric.fourteen[1]}')">
-                                      <img src="${employee.fabric.fourteen[0]}" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.fifteen[0]}','fabric-name-card-5', '${employee.fabric.fifteen[1]}')">
-                                     <img src="${employee.fabric.fifteen[0]}" class="img-fluid">
-                                </div>	
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.sixteen[0]}','fabric-name-card-5', '${employee.fabric.sixteen[1]}')">
-                                     <img src="${employee.fabric.sixteen[0]}" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.seventeen[0]}','fabric-name-card-5', '${employee.fabric.seventeen[1]}')">
-                                      <img src="${employee.fabric.seventeen[0]}" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.eighteen[0]}','fabric-name-card-5', '${employee.fabric.eighteen[1]}')">
-                                     <img src="${employee.fabric.eighteen[0]}" class="img-fluid">
-                                </div>	
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.nineteen[0]}','fabric-name-card-5', '${employee.fabric.nineteen[1]}')">
-                                     <img src="${employee.fabric.nineteen[0]}" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="flex-row d-flex justify-content-center">
-                            <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twenty[0]}','fabric-name-card-5', '${employee.fabric.twenty[1]}')">
-                                    <img src="${employee.fabric.twenty[0]}" class="img-fluid">
-                            </div>
-                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyOne[0]}','fabric-name-card-5', '${employee.fabric.twentyOne[1]}')">
-                                <img src="${employee.fabric.twentyOne[0]}" class="img-fluid">
-                            </div>	
-                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyTwo[0]}','fabric-name-card-5', '${employee.fabric.twentyTwo[1]}')">
-                                <img src="${employee.fabric.twentyTwo[0]}" class="img-fluid">
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="flex-row d-flex justify-content-center">
-                            <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyThree[0]}','fabric-name-card-5', '${employee.fabric.twentyThree[1]}')">
-                                    <img src="${employee.fabric.twentyThree[0]}" class="img-fluid">
-                            </div>
-                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyFour[0]}','fabric-name-card-5', '${employee.fabric.twentyFour[1]}')">
-                                <img src="${employee.fabric.twentyFour[0]}" class="img-fluid">
-                            </div>	
-                            <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.twentyFive[0]}','fabric-name-card-5', '${employee.fabric.twentyFive[1]}')">
-                                <img src="${employee.fabric.twentyFive[0]}" class="img-fluid">
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev justify-content-start" href="#carousel-card-5" role="button" data-slide="prev">
-                        <img src="../img/icons/back.png">
-                      </a>
-                      <a class="carousel-control-next justify-content-end" href="#carousel-card-5" role="button" data-slide="next">
-                            <img src="../img/icons/next.png">
-                      </a>
-                </div>
-            </div>
-
-            <div class="fabric__content flex-column d-flex ml-5">
-                    <h2 class="fabric__title mt-0">${employee.title}</h2>
-                    <p class="fabric__description mt-1"><b>Состав:</b> ${employee.description.structure[0]}, <br>${employee.description.structure[1]}<br><b>Затемнение:</b> ${employee.description.darkening}</p>
-                    <div class="system d-flex flex-row align-self-baseline mt-5">
-                        <div class="d-flex align-items-baseline">
-                            <h3 class="title-fabric">Установка:&ensp;</h3>
-                            <a id="installation-5" class="installation"> Mini</a>
-                        </div>
-
-                        <div class="dropdown p-0">
-                            <div id="dropdownMenuSystem5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="../img/icons/bottom.svg" class="color-picker__arrow ml-2 mt-1" width="8" height="8">
-                            </div>
-                            <div class="system__dropdown dropdown-menu mt-0" aria-labelledby="dropdownMenuSystem5">
-                                <a class="dropdown-item" href="#!" id="system_uni" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[1]}, '${employee.cost.installation[1]}')"> Uni</a>
-                                <a class="dropdown-item" href="#!" id="system_mgs" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[2]}, '${employee.cost.installation[2]}')"> Mgs</a>
-                                <a class="dropdown-item" href="#!" id="system_mini" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[0]}, '${employee.cost.installation[0]}')"> Mini</a>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="color-picker d-flex flex-row align-self-baseline mt-1">
-                        <h3 class="title-fabric">Цвета: </h3>
-                        <div class="color-picker__colors d-flex flex-row align-self-baseline">
-                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eighteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eighteen[0]}','fabric-name-card-5', '${employee.fabric.eighteen[1]}')"></div>
-                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.two[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.two[0]}','fabric-name-card-5', '${employee.fabric.two[1]}')"></div>
-                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.three[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.three[0]}','fabric-name-card-5', '${employee.fabric.three[1]}')"></div>
-                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.four[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.four[0]}','fabric-name-card-5', '${employee.fabric.four[1]}')"></div>
-                        </div>
-
-                        <div class="dropdown p-0">
-                            <div id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="../img/icons/bottom.svg" class="color-picker__arrow ml-2" width="9" height="9">
-                            </div>
-                            <div class="color-picker__dropdown dropdown-menu mt-0" aria-labelledby="dropdownMenu5" >
-                                <div class="d-flex flex-row">
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.five[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.five[0]}','fabric-name-card-5', '${employee.fabric.five[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.six[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.six[0]}','fabric-name-card-5', '${employee.fabric.six[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.seven[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.seven[0]}','fabric-name-card-5', '${employee.fabric.seven[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eight[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eight[0]}','fabric-name-card-5', '${employee.fabric.eight[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.nine[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.nine[0]}','fabric-name-card-5', '${employee.fabric.nine[1]}')"></div></a>
-                                </div>
-                                <div class="d-flex flex-row mt-1">
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.ten[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.ten[0]}','fabric-name-card-5', '${employee.fabric.ten[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eleven[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.eleven[0]}','fabric-name-card-5', '${employee.fabric.eleven[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twelve[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twelve[0]}','fabric-name-card-5', '${employee.fabric.twelve[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.thirteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.thirteen[0]}','fabric-name-card-5', '${employee.fabric.thirteen[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.fourteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fourteen[0]}','fabric-name-card-5', '${employee.fabric.fourteen[1]}')"></div></a>
-                                </div>
-                                <div class="d-flex flex-row mt-1">
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.fifteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fifteen[0]}','fabric-name-card-5', '${employee.fabric.fifteen[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.sixteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.sixteen[0]}','fabric-name-card-5', '${employee.fabric.sixteen[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.seventeen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.seventeen[0]}','fabric-name-card-5', '${employee.fabric.seventeen[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.nineteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.nineteen[0]}','fabric-name-card-5', '${employee.fabric.nineteen[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twenty[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twenty[0]}','fabric-name-card-5', '${employee.fabric.twenty[1]}')"></div></a>
-                                </div>
-                                <div class="d-flex flex-row mt-1">
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyOne[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyOne[0]}','fabric-name-card-5', '${employee.fabric.twentyOne[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyTwo[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyTwo[0]}','fabric-name-card-5', '${employee.fabric.twentyTwo[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyThree[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyThree[0]}','fabric-name-card-5', '${employee.fabric.twentyThree[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyFour[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyFour[0]}','fabric-name-card-5', '${employee.fabric.twentyFour[1]}')"></div></a>
-                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyFive[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.twentyFive[0]}','fabric-name-card-5', '${employee.fabric.twentyFive[1]}')"></div></a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    
-                    <div class="fabric__order flex-column d-flex" style="margin-top: 37px;">
-                        <div class="fabric__price"><span id="number-5">${employee.cost.price[0]}</span> <span class="price">BYN./м<sup>2</sup></span></div>
-                        <button class="button-secondary big-button button mt-2 ml-lg-auto" onclick="openModal()">Заказать</button>
-                    </div>
-            </div>
-        </div>  	
-        `;
-        })
-        .join('');
-    employeesGrid.innerHTML = htmlString;
-};
-
-
-loadEmployees();
 
 
 
