@@ -1,0 +1,43 @@
+[
+	{
+		"id": "1",
+		"title": "Juventus",
+		"description": {
+			"structure": ["65% полиэстер", "35% хлопок"],
+			"darkening": "50%"
+		},
+		"fabric": {
+			"one": ["../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#664E3E"],
+			"two": ["../img/photos/Рольшторы/День-Ночь/Juventus/03.jpg", "03", "#CFC2B0"],
+			"three": ["../img/photos/Рольшторы/День-Ночь/Juventus/07.jpg", "07", "#A6937C"],
+			"four": ["../img/photos/Рольшторы/День-Ночь/Juventus/10.jpg", "10", "#CBAA86"],
+			"five": ["../img/photos/Рольшторы/День-Ночь/Juventus/11.jpg", "11", "#70655C"]
+		},
+		"cost": {
+			"installation": ["Mini", "Uni", "Mgs"],
+			"price": [66, 81, 105]
+		}
+	},
+    {
+		"id": "2",
+		"title": "Luxury",
+		"description": {
+			"structure": ["65% полиэстер", "35% хлопок"],
+			"darkening": "50%"
+		},
+		"fabric": {
+			"one": ["../img/photos/Рольшторы/День-Ночь/Luxury/12.jpg", "12", "#664E3E"],
+			"two": ["../img/photos/Рольшторы/День-Ночь/Luxury/11.jpg", "11", "#CFC2B0"],
+			"three": ["../img/photos/Рольшторы/День-Ночь/Luxury/14.jpg", "14", "#A6937C"],
+			"four": ["../img/photos/Рольшторы/День-Ночь/Luxury/16.jpg", "16", "#CBAA86"],
+			"five": ["../img/photos/Рольшторы/День-Ночь/Luxury/18.jpg", "18", "#70655C"]
+		},
+		"cost": {
+			"installation": ["Mini", "Uni", "Mgs"],
+			"price": [66, 81, 105]
+		}
+	}
+	
+	
+	
+]
