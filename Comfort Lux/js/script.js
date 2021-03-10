@@ -4,7 +4,7 @@ let employees = [];
 
 const loadEmployees = async () => {
     try {
-        const res = await fetch('https://valentinajurievna.github.io/ComfortLux/Comfort%20Lux/data.json');
+        const res = await fetch('https://valentinajurievna.github.io/ComfortLux/Comfort%20Lux/json/data.json');
         employees = await res.json();
         displayEmployeesGrid(employees);
     } catch (err) {
