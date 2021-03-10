@@ -231,21 +231,21 @@ loadEmployees();
 
 
 
-const employeesGrid = document.getElementById('card');
-let employees = [];
+const fabricCard = document.getElementById('card');
+let fabric = [];
 
-const loadEmployees = async () => {
+const loadFabric = async () => {
     try {
         const res = await fetch('https://valentinajurievna.github.io/ComfortLux/Comfort%20Lux/json/dayNight.json');
-        employees = await res.json();
-        displayEmployeesGrid(employees);
+        fabric = await res.json();
+        displayFabric(fabric);
     } catch (err) {
         console.error(err);
     }
 };
 
-const displayEmployeesGrid = (employees) => {
-		const htmlString = employees
+const displayFabric = (fabric) => {
+		const String = fabric
         .map((employee) => {
             return `
             <div class="fabric-card p-4 flex-row d-flex col-lg-6 col-md-12 mt-md-5 mt-lg-0 mr-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
@@ -374,11 +374,11 @@ const displayEmployeesGrid = (employees) => {
         `;
         })
         .join('');
-    employeesGrid.innerHTML = htmlString;
+        fabricCard.innerHTML = String;
 };
 
 
-loadEmployees();
+loadFabric();
 
 
 
