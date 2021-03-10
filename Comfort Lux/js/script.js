@@ -1738,8 +1738,8 @@ const displayEmployeesGrid = (employees) => {
                     <div class="color-picker d-flex flex-row align-self-baseline mt-1">
                         <h3 class="title-fabric">Цвета: </h3>
                         <div class="color-picker__colors d-flex flex-row align-self-baseline">
-                            <div class="color-picker__colors-color big" style="background-color: #00041D;" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.first[1]}','fabric-name-card-5', '1100')"></div>
-                            <div class="color-picker__colors-color big" style="background-color: #AD1000;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg','fabric-name-card-5', '1800')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.first[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.first[0]}','fabric-name-card-5', '${employee.fabric.first[1]}')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.second[2]};" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.second[0]}','fabric-name-card-5', '${employee.fabric.second[1]}')"></div>
                             <div class="color-picker__colors-color big" style="background-color: #ACC7D6;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg','fabric-name-card-5', 'bh04')"></div>
                             <div class="color-picker__colors-color big" style="background-color: #E2A9A9;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg','fabric-name-card-5', 'bh10')"></div>
                         </div>
