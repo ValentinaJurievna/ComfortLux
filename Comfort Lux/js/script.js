@@ -1648,7 +1648,7 @@ let employees = [];
 
 const loadEmployees = async () => {
     try {
-        const res = await fetch('https://valentinajurievna.github.io/photos/data.json');
+        const res = await fetch('https://valentinajurievna.github.io/ComfortLux/Comfort%20Lux/data.json');
         employees = await res.json();
         displayEmployeesGrid(employees);
     } catch (err) {
