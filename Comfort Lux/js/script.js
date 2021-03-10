@@ -1667,7 +1667,7 @@ const displayEmployeesGrid = (employees) => {
                         <div class="fabric-card__name-of-fabric align-self-end">
                             <h3 class="d-flex justify-content-center align-items-center mt-3" id="fabric-name-card-5">${employee.fabric.first[1]}</h3>
                         </div>
-                        <img src="${employee.fabric.first[1]}" class="fabric-card__big-photo img-fluid" id="fabric-card__big-photo-card-5">
+                        <img src="${employee.fabric.first[0]}" class="fabric-card__big-photo img-fluid" id="fabric-card__big-photo-card-5">
                     </div>
                     <div class="hover-effect" id="hover-effect-5" onclick="openPhoto('fabric-card__big-photo-card-5', 'hover-effect-5')"  >
                         <a href="#"><img src="../img/icons/visibility.svg" class="img-fluid" alt=""></a>
