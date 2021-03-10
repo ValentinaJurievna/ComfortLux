@@ -1677,108 +1677,46 @@ const displayEmployeesGrid = (employees) => {
                       <div class="carousel-inner align-items-center">
                         <div class="carousel-item active">
                               <div class="flex-row d-flex justify-content-center">
-                                    <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/1100.jpg', 'fabric-name-card-5', '1100')">
-                                          <img src="../img/photos/Рольшторы/День-Ночь/Soft/1100.jpg" class="img-fluid">
+                                    <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.second[0]}', 'fabric-name-card-5', '${employee.fabric.second[1]}')">
+                                          <img src="${employee.fabric.second[0]}" class="img-fluid">
                                     </div>
-                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg', 'fabric-name-card-5', '1800')">
-                                         <img src="../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg" class="img-fluid">
+                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '${employee.fabric.third[0]}', 'fabric-name-card-5', '${employee.fabric.third[1]}')">
+                                         <img src="${employee.fabric.third[0]}" class="img-fluid">
                                     </div>
-                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg', 'fabric-name-card-5', 'bh04')">
-                                         <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg" class="img-fluid">
+                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fourth[0]}', 'fabric-name-card-5', '${employee.fabric.fourth[1]}')">
+                                         <img src="${employee.fabric.fourth[0]}" class="img-fluid">
                                     </div>
                                   </div>
                         </div>
                         <div class="carousel-item">
                               <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg','fabric-name-card-5', 'bh10')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg" class="img-fluid">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.fifth[0]}','fabric-name-card-5', '${employee.fabric.fifth[1]}')">
+                                      <img src="${employee.fabric.fifth[0]}" class="img-fluid">
                                 </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg','fabric-name-card-5', 'bh1802')">
-                                     <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg" class="img-fluid">
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '','fabric-name-card-5', '')">
+                                     <img src="" class="img-fluid">
                                 </div>	
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg','fabric-name-card-5', 'bh1804')">
-                                     <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg" class="img-fluid">
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '','fabric-name-card-5', '')">
+                                     <img src="" class="img-fluid">
                                 </div>
                               </div>
                         </div>
                         <div class="carousel-item">
                               <div class="flex-row d-flex justify-content-center">
                                 <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg','fabric-name-card-5', 'bh1805')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg" class="img-fluid">
+                                      <img src="" class="img-fluid">
                                 </div>
                                 <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg','fabric-name-card-5', 'bh1807')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg" class="img-fluid">
+                                      <img src="" class="img-fluid">
                                 </div>
                                 <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg','fabric-name-card-5', 'bh1808')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg" class="img-fluid">
+                                      <img src="" class="img-fluid">
                                 </div>
                               </div>
                         </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1809.jpg','fabric-name-card-5', 'bh1809')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1809.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1810.jpg','fabric-name-card-5', 'bh1810')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1810.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1812.jpg','fabric-name-card-5', 'bh1812')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1812.jpg" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s01.jpg','fabric-name-card-5', 's01')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s01.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg','fabric-name-card-5', 's02')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg','fabric-name-card-5', 's03')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg','fabric-name-card-5', 's04')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg','fabric-name-card-5', 's05')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg','fabric-name-card-5', 's06')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s07.jpg','fabric-name-card-5', 's07')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s07.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s08.jpg','fabric-name-card-5', 's08')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s08.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s09.jpg','fabric-name-card-5', 's09')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s09.jpg" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s10.jpg','fabric-name-card-5', 's10')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s10.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s15.jpg','fabric-name-card-5', 's15')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s15.jpg" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s17.jpg','fabric-name-card-5', 's17')">
-                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s17.jpg" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
+                       
+                        
+                        
                       </div>
                       <a class="carousel-control-prev justify-content-start" href="#carousel-card-5" role="button" data-slide="prev">
                         <img src="../img/icons/back.png">
