@@ -1660,7 +1660,7 @@ const displayEmployeesGrid = (employees) => {
 		const htmlString = employees
         .map((employee) => {
             return `
-            <div class="fabric-card p-4 flex-row d-flex col-lg-6 col-md-12 mt-md-5 mt-lg-0 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <div class="fabric-card p-4 flex-row d-flex col-lg-6 col-md-12 mt-md-5 mt-lg-0 mr-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
             <div class="fabric-card__photos flex-column d-flex">
                 <div class="fabric-card__photo">
                     <div class="d-flex justify-content-end">
