@@ -1639,3 +1639,237 @@ function openAdditional() {
 
 }
 
+
+
+
+const employeesGrid = document.getElementById('card');
+
+let employees = [];
+
+const loadEmployees = async () => {
+    try {
+        const res = await fetch('https://valentinajurievna.github.io/photos/data.json');
+        employees = await res.json();
+        displayEmployeesGrid(employees);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const displayEmployeesGrid = (employees) => {
+		const htmlString = employees
+        .map((employee) => {
+            return `
+            <div class="fabric-card p-4 flex-row d-flex col-lg-6 col-md-12 mt-md-5 mt-lg-0 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <div class="fabric-card__photos flex-column d-flex">
+                <div class="fabric-card__photo">
+                    <div class="d-flex justify-content-end">
+                        <div class="fabric-card__name-of-fabric align-self-end">
+                            <h3 class="d-flex justify-content-center align-items-center mt-3" id="fabric-name-card-5">${employee.fabric.first[1]}</h3>
+                        </div>
+                        <img src="${employee.fabric.first[1]}" class="fabric-card__big-photo img-fluid" id="fabric-card__big-photo-card-5">
+                    </div>
+                    <div class="hover-effect" id="hover-effect-5" onclick="openPhoto('fabric-card__big-photo-card-5', 'hover-effect-5')"  >
+                        <a href="#"><img src="../img/icons/visibility.svg" class="img-fluid" alt=""></a>
+                    </div>
+                </div>
+                <div id="carousel-card-5" class="carousel slide mt-4" data-ride="carousel" data-interval="false" data-touch="true">
+                      <div class="carousel-inner align-items-center">
+                        <div class="carousel-item active">
+                              <div class="flex-row d-flex justify-content-center">
+                                    <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/1100.jpg', 'fabric-name-card-5', '1100')">
+                                          <img src="../img/photos/Рольшторы/День-Ночь/Soft/1100.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg', 'fabric-name-card-5', '1800')">
+                                         <img src="../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg', 'fabric-name-card-5', 'bh04')">
+                                         <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg" class="img-fluid">
+                                    </div>
+                                  </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg','fabric-name-card-5', 'bh10')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg','fabric-name-card-5', 'bh1802')">
+                                     <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg" class="img-fluid">
+                                </div>	
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg','fabric-name-card-5', 'bh1804')">
+                                     <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg','fabric-name-card-5', 'bh1805')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg','fabric-name-card-5', 'bh1807')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg','fabric-name-card-5', 'bh1808')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1809.jpg','fabric-name-card-5', 'bh1809')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1809.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1810.jpg','fabric-name-card-5', 'bh1810')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1810.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1812.jpg','fabric-name-card-5', 'bh1812')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/bh1812.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s01.jpg','fabric-name-card-5', 's01')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s01.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg','fabric-name-card-5', 's02')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg','fabric-name-card-5', 's03')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg','fabric-name-card-5', 's04')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg','fabric-name-card-5', 's05')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg','fabric-name-card-5', 's06')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s07.jpg','fabric-name-card-5', 's07')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s07.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s08.jpg','fabric-name-card-5', 's08')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s08.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s09.jpg','fabric-name-card-5', 's09')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s09.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="flex-row d-flex justify-content-center">
+                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s10.jpg','fabric-name-card-5', 's10')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s10.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s15.jpg','fabric-name-card-5', 's15')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s15.jpg" class="img-fluid">
+                                </div>
+                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s17.jpg','fabric-name-card-5', 's17')">
+                                      <img src="../img/photos/Рольшторы/День-Ночь/Soft/s17.jpg" class="img-fluid">
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev justify-content-start" href="#carousel-card-5" role="button" data-slide="prev">
+                        <img src="../img/icons/back.png">
+                      </a>
+                      <a class="carousel-control-next justify-content-end" href="#carousel-card-5" role="button" data-slide="next">
+                            <img src="../img/icons/next.png">
+                      </a>
+                </div>
+            </div>
+
+            <div class="fabric__content flex-column d-flex ml-5">
+                    <h2 class="fabric__title mt-0">${employee.title}</h2>
+                    <p class="fabric__description mt-1"><b>Состав:</b> ${employee.description.structure[0]}, <br>${employee.description.structure[1]}<br><b>Затемнение:</b> ${employee.description.darkening}</p>
+                    <div class="system d-flex flex-row align-self-baseline mt-5">
+                        <div class="d-flex align-items-baseline">
+                            <h3 class="title-fabric">Установка:&ensp;</h3>
+                            <a id="installation-5" class="installation"> Mini</a>
+                        </div>
+
+                        <div class="dropdown p-0">
+                            <div id="dropdownMenuSystem5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../img/icons/bottom.svg" class="color-picker__arrow ml-2 mt-1" width="8" height="8">
+                            </div>
+                            <div class="system__dropdown dropdown-menu mt-0" aria-labelledby="dropdownMenuSystem5">
+                                <a class="dropdown-item" href="#!" id="system_uni" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[1]}, '${employee.cost.installation[1]}')"> Uni</a>
+                                <a class="dropdown-item" href="#!" id="system_mgs" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[2]}, '${employee.cost.installation[2]}')"> Mgs</a>
+                                <a class="dropdown-item" href="#!" id="system_mini" onclick="SelectSystem('number-5', 'installation-5', ${employee.cost.price[0]}, '${employee.cost.installation[0]}')"> Mini</a>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="color-picker d-flex flex-row align-self-baseline mt-1">
+                        <h3 class="title-fabric">Цвета: </h3>
+                        <div class="color-picker__colors d-flex flex-row align-self-baseline">
+                            <div class="color-picker__colors-color big" style="background-color: #00041D;" onclick="replaceImg('fabric-card__big-photo-card-5','${employee.fabric.first[1]}','fabric-name-card-5', '1100')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: #AD1000;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/1800.jpg','fabric-name-card-5', '1800')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: #ACC7D6;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh04.jpg','fabric-name-card-5', 'bh04')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: #E2A9A9;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg','fabric-name-card-5', 'bh10')"></div>
+                        </div>
+
+                        <div class="dropdown p-0">
+                            <div id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../img/icons/bottom.svg" class="color-picker__arrow ml-2" width="9" height="9">
+                            </div>
+                            <div class="color-picker__dropdown dropdown-menu mt-0" aria-labelledby="dropdownMenu5" >
+                                <div class="d-flex flex-row">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #D78400;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg','fabric-name-card-5', 'bh1802')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #DC1212;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg','fabric-name-card-5', 'bh1804')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #B9AE00;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg','fabric-name-card-5', 'bh1805')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #7E7700;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg','fabric-name-card-5', 'bh1807')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #4B4F82;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg','fabric-name-card-5', 'bh1808')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #2F7873;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1809.jpg','fabric-name-card-5', 'bh1809')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #13168A;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1810.jpg','fabric-name-card-5', 'bh1810')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #6E1506;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1812.jpg','fabric-name-card-5', 'bh1812')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #E0E0E0;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s01.jpg','fabric-name-card-5', 's01')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #5B5656;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg','fabric-name-card-5', 's02')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #D4A268;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg','fabric-name-card-5', 's03')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #C4B085;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg','fabric-name-card-5', 's04')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #EAD9B8;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg','fabric-name-card-5', 's05')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #533E1F;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg','fabric-name-card-5', 's06')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #8D3535;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s07.jpg','fabric-name-card-5', 's07')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #7F557F;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s08.jpg','fabric-name-card-5', 's08')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #CE9211;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s09.jpg','fabric-name-card-5', 's09')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #D9AC25;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s10.jpg','fabric-name-card-5', 's10')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #180E00;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s15.jpg','fabric-name-card-5', 's15')"></div></a>
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: #080000;" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/s17.jpg','fabric-name-card-5', 's17')"></div></a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fabric__order flex-column d-flex" style="margin-top: 37px;">
+                        <div class="fabric__price"><span id="number-5">66</span> <span class="price">BYN./м<sup>2</sup></span></div>
+                        <button class="button-secondary big-button button mt-2 ml-lg-auto" onclick="openModal()">Заказать</button>
+                    </div>
+            </div>
+        </div>  	
+        `;
+        })
+        .join('');
+    employeesGrid.innerHTML = htmlString;
+};
+
+
+loadEmployees();
+
+
+
+
