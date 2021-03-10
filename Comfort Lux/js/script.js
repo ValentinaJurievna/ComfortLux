@@ -1694,26 +1694,14 @@ const displayEmployeesGrid = (employees) => {
                                       <img src="${employee.fabric.fifth[0]}" class="img-fluid">
                                 </div>
                                 <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '','fabric-name-card-5', '')">
-                                     <img src="" class="img-fluid">
+                                     <img src="${employee.fabric.fifth[3]}" class="img-fluid">
                                 </div>	
                                 <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5', '','fabric-name-card-5', '')">
                                      <img src="" class="img-fluid">
                                 </div>
                               </div>
                         </div>
-                        <div class="carousel-item">
-                              <div class="flex-row d-flex justify-content-center">
-                                <div class="fabric-card__little-photo" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg','fabric-name-card-5', 'bh1805')">
-                                      <img src="" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg','fabric-name-card-5', 'bh1807')">
-                                      <img src="" class="img-fluid">
-                                </div>
-                                <div class="fabric-card__little-photo ml-1" onclick="replaceImg('fabric-card__big-photo-card-5','../img/photos/Рольшторы/День-Ночь/Soft/bh1808.jpg','fabric-name-card-5', 'bh1808')">
-                                      <img src="" class="img-fluid">
-                                </div>
-                              </div>
-                        </div>
+                       
                        
                         
                         
