@@ -16,7 +16,8 @@
 		"cost": {
 			"installation": ["Mini", "Uni", "Mgs"],
 			"price": [66, 81, 105]
-		}
+		},
+		"animation": 0.2
 	},
     {
 		"id": "4",
@@ -35,7 +36,8 @@
 		"cost": {
 			"installation": ["Mini", "Uni", "Mgs"],
 			"price": [66, 81, 105]
-		}
+		},
+		"animation": 0.3
 	}
 	
 	

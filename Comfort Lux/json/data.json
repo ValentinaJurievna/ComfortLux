@@ -40,7 +40,8 @@
 		"cost": {
 			"installation": ["Mini", "Uni", "Mgs"],
 			"price": [66, 81, 105]
-		}
+		},
+		"animation": 0
 	},
 	{
 		"id": "2",
@@ -50,21 +51,21 @@
 			"darkening": "50%"
 		},
 		"fabric": {
-			"one": ["../img/photos/Рольшторы/День-Ночь/Soft/2245-15.jpg", "2245-15", "#664E3E"],
-			"two": ["../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg", "s05", "#CFC2B0"],
-			"three": ["../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg", "s04", "#A6937C"],
-			"four": ["../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg", "s03", "#CBAA86"],
-			"five": ["../img/photos/Рольшторы/День-Ночь/Soft/s02.jpg", "s02", "#70655C"],
+			"one": ["../img/photos/Рольшторы/День-Ночь/PZ/2245-15.jpg", "2245-15", "#"],
+			"two": ["../img/photos/Рольшторы/День-Ночь/PZ/1341-8.jpg", "1341-8", "#"],
+			"three": ["../img/photos/Рольшторы/День-Ночь/PZ/1341-10.jpg", "1341-10", "#"],
+			"four": ["../img/photos/Рольшторы/День-Ночь/PZ/1341-11.jpg", "1341-11", "#"],
+			"five": ["../img/photos/Рольшторы/День-Ночь/PZ/1342-1.jpg", "1342-1", "#"],
 
-			"six": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1807.jpg", "bh1807", "#A08E5B"],
-			"seven": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1805.jpg", "bh1805", "#CAAF47"],
-			"eight": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1804.jpg", "bh1804", "#AD1E1E"],
-			"nine": ["../img/photos/Рольшторы/День-Ночь/Soft/bh1802.jpg", "bh1802", "#B7591D"],
-			"ten": ["../img/photos/Рольшторы/День-Ночь/Soft/bh10.jpg", "bh10", "#BC9D92"],
+			"six": ["../img/photos/Рольшторы/День-Ночь/PZ/1342-2.jpg", "1342-2", "#"],
+			"seven": ["../img/photos/Рольшторы/День-Ночь/PZ/1522-1.jpg", "1522-1", "#"],
+			"eight": ["../img/photos/Рольшторы/День-Ночь/PZ/1522-2.jpg", "1522-2", "#"],
+			"nine": ["../img/photos/Рольшторы/День-Ночь/PZ/2245-11.jpg", "2245-11", "#"],
+			"ten": ["../img/photos/Рольшторы/День-Ночь/PZ/2509-11.jpg", "2509-11", "#"],
 
-			"eleven": ["../img/photos/1.png", "", ""],
-			"twelve": ["../img/photos/1.png", "", ""],
-			"thirteen": ["../img/photos/1.png", "", ""],
+			"eleven": ["../img/photos/Рольшторы/День-Ночь/PZ/2509-14.jpg", "2509-14", ""],
+			"twelve": ["../img/photos/Рольшторы/День-Ночь/PZ/3443-6.jpg", "3443-6", ""],
+			"thirteen": ["../img/photos/Рольшторы/День-Ночь/PZ/3443-7.jpg", "3443-7", ""],
 			"fourteen": ["../img/photos/1.png", "", ""],
 			"fifteen": ["../img/photos/1.png", "", ""],
 
@@ -83,7 +84,8 @@
 		"cost": {
 			"installation": ["Mini", "Uni", "Mgs"],
 			"price": [66, 81, 105]
-		}
+		},
+		"animation": 0.1
 	}
 	
 	
