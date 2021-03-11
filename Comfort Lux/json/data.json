@@ -44,13 +44,13 @@
 	},
 	{
 		"id": "2",
-		"title": "Soft",
+		"title": "PZ",
 		"description": {
 			"structure": ["65% полиэстер", "35% хлопок"],
 			"darkening": "50%"
 		},
 		"fabric": {
-			"one": ["../img/photos/Рольшторы/День-Ночь/Soft/s06.jpg", "s06", "#664E3E"],
+			"one": ["../img/photos/Рольшторы/День-Ночь/Soft/2245-15.jpg", "2245-15", "#664E3E"],
 			"two": ["../img/photos/Рольшторы/День-Ночь/Soft/s05.jpg", "s05", "#CFC2B0"],
 			"three": ["../img/photos/Рольшторы/День-Ночь/Soft/s04.jpg", "s04", "#A6937C"],
 			"four": ["../img/photos/Рольшторы/День-Ночь/Soft/s03.jpg", "s03", "#CBAA86"],
