@@ -167,7 +167,7 @@ const displayEmployeesGrid = (employees) => {
                     <div class="color-picker d-flex flex-row align-self-baseline mt-1">
                         <h3 class="title-fabric">Цвета: </h3>
                         <div class="color-picker__colors d-flex flex-row align-self-baseline">
-                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eighteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.eighteen[0]}','fabric-name-card-${employee.id}', '${employee.fabric.eighteen[1]}')"></div>
+                            <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.one[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.one[0]}','fabric-name-card-${employee.id}', '${employee.fabric.one[1]}')"></div>
                             <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.two[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.two[0]}','fabric-name-card-${employee.id}', '${employee.fabric.two[1]}')"></div>
                             <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.three[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.three[0]}','fabric-name-card-${employee.id}', '${employee.fabric.three[1]}')"></div>
                             <div class="color-picker__colors-color big" style="background-color: ${employee.fabric.four[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.four[0]}','fabric-name-card-${employee.id}', '${employee.fabric.four[1]}')"></div>
@@ -205,6 +205,9 @@ const displayEmployeesGrid = (employees) => {
                                     <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyThree[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.twentyThree[0]}','fabric-name-card-${employee.id}', '${employee.fabric.twentyThree[1]}')"></div></a>
                                     <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyFour[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.twentyFour[0]}','fabric-name-card-${employee.id}', '${employee.fabric.twentyFour[1]}')"></div></a>
                                     <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.twentyFive[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.twentyFive[0]}','fabric-name-card-${employee.id}', '${employee.fabric.twentyFive[1]}')"></div></a>
+                                </div>
+                                <div class="d-flex flex-row mt-1">
+                                    <a class="dropdown-item" href="#!"><div class="color-picker__colors-color big" style="background-color: ${employee.fabric.eighteen[2]};" onclick="replaceImg('fabric-card__big-photo-card-${employee.id}','${employee.fabric.eighteen[0]}','fabric-name-card-${employee.id}', '${employee.fabric.eighteen[1]}')"></div></a>
                                 </div>
                               </div>
                         </div>

@@ -7,11 +7,11 @@
 			"darkening": "50%"
 		},
 		"fabric": {
-			"one": ["../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#664E3E"],
-			"two": ["../img/photos/Рольшторы/День-Ночь/Juventus/03.jpg", "03", "#CFC2B0"],
-			"three": ["../img/photos/Рольшторы/День-Ночь/Juventus/07.jpg", "07", "#A6937C"],
-			"four": ["../img/photos/Рольшторы/День-Ночь/Juventus/10.jpg", "10", "#CBAA86"],
-			"five": ["../img/photos/Рольшторы/День-Ночь/Juventus/11.jpg", "11", "#70655C"]
+			"one": ["../img/photos/Рольшторы/День-Ночь/Juventus/02.jpg", "02", "#CCB99F"],
+			"two": ["../img/photos/Рольшторы/День-Ночь/Juventus/03.jpg", "03", "#CAB7B3"],
+			"three": ["../img/photos/Рольшторы/День-Ночь/Juventus/07.jpg", "07", "#524F4A"],
+			"four": ["../img/photos/Рольшторы/День-Ночь/Juventus/10.jpg", "10", "#B99D75"],
+			"five": ["../img/photos/Рольшторы/День-Ночь/Juventus/11.jpg", "11", "#4F3324"]
 		},
 		"cost": {
 			"installation": ["Mini", "Uni", "Mgs"],
@@ -27,11 +27,11 @@
 			"darkening": "50%"
 		},
 		"fabric": {
-			"one": ["../img/photos/Рольшторы/День-Ночь/Luxury/12.jpg", "12", "#664E3E"],
-			"two": ["../img/photos/Рольшторы/День-Ночь/Luxury/11.jpg", "11", "#CFC2B0"],
-			"three": ["../img/photos/Рольшторы/День-Ночь/Luxury/14.jpg", "14", "#A6937C"],
-			"four": ["../img/photos/Рольшторы/День-Ночь/Luxury/16.jpg", "16", "#CBAA86"],
-			"five": ["../img/photos/Рольшторы/День-Ночь/Luxury/18.jpg", "18", "#70655C"]
+			"one": ["../img/photos/Рольшторы/День-Ночь/Luxury/12.jpg", "12", "#"],
+			"two": ["../img/photos/Рольшторы/День-Ночь/Luxury/11.jpg", "11", "#"],
+			"three": ["../img/photos/Рольшторы/День-Ночь/Luxury/14.jpg", "14", "#"],
+			"four": ["../img/photos/Рольшторы/День-Ночь/Luxury/16.jpg", "16", "#"],
+			"five": ["../img/photos/Рольшторы/День-Ночь/Luxury/18.jpg", "18", "#"]
 		},
 		"cost": {
 			"installation": ["Mini", "Uni", "Mgs"],
